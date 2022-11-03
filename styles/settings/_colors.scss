@@ -1,0 +1,47 @@
+.dark-theme {
+	--desktop-background: #181818;
+	--desktop-background: radial-gradient(
+		circle at 50% 120%,
+		#282828 0%,
+		#181818 90%
+	);
+	--toolbar-button-background: #323232;
+	--toolbar-button-background: radial-gradient(
+		circle,
+		#323232 25%,
+		#000000 100%
+	);
+	--toolbar-button-color: #ffffff;
+	--shortcut-icon-color: #ffffff;
+	--shortcut-icon-background: #323232;
+	--shortcut-label-color: #ffffff;
+	--topbar-background: #121212;
+	--topbar-color: #d3d3d3;
+	--modal-background: #323232;
+	--modal-color: #ffffff;
+	--modal-header-shadow-color: #161616;
+}
+.light-theme,
+.default {
+	--desktop-background: #c8c8c8;
+	--desktop-background: radial-gradient(
+		circle at 50% 120%,
+		#f9f9f9 0%,
+		#dbdbdb 90%
+	);
+	--toolbar-button-background: #979797;
+	--toolbar-button-background: radial-gradient(
+		circle,
+		#dbdbdb 25%,
+		#979797 100%
+	);
+	--toolbar-button-color: #000000;
+	--shortcut-icon-color: #000000;
+	--shortcut-icon-background: #f9f9f9;
+	--shortcut-label-color: #000000;
+	--topbar-background: #b0b0b0;
+	--topbar-color: #121212;
+	--modal-background: #ffffff;
+	--modal-color: #000000;
+	--modal-header-shadow-color: #dddddd;
+}

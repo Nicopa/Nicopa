@@ -1,0 +1,44 @@
+@import "../../styles/settings/media-sizes";
+.root {
+	display: flex;
+	flex-direction: column;
+	.icon {
+		text-align: center;
+		svg {
+			width: 40px;
+			height: 40px;
+		}
+	}
+	.label {
+		font-size: 1.35rem;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 4px;
+	}
+}
+@media all and (min-width: $tablets-min-width) {
+	.root {
+		.icon {
+			svg {
+				width: 60px;
+				height: 60px;
+			}
+		}
+		.label {
+			font-size: 1.4rem;
+		}
+	}
+}
+@media all and (min-width: $laptops-min-width) {
+	.root {
+		.icon {
+			svg {
+				width: 80px;
+				height: 80px;
+			}
+		}
+		.label {
+			font-size: 1.6rem;
+		}
+	}
+}

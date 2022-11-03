@@ -1,0 +1,156 @@
+@import "../../styles/settings/media-sizes";
+$animation-time: 400ms;
+.root {
+	position: absolute;
+	overflow: hidden;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	transform: translateY(20px);
+	-webkit-transition: all $animation-time, color 0ms, background-color 0ms;
+	transition: all $animation-time, color 0ms, background-color 0ms;
+	visibility: hidden;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	color: var(--modal-color);
+	.header {
+		padding: 8px 12px;
+		opacity: 0;
+		box-shadow: 0 1px 1px var(--modal-header-shadow-color);
+		.title {
+			font-size: 1.4rem;
+			font-weight: bold;
+		}
+		.close {
+			font-size: 1.4rem;
+			float: right;
+			cursor: pointer;
+		}
+	}
+	.content {
+		opacity: 0;
+		padding: 8px 12px;
+		overflow-y: auto;
+		width: 100%;
+		h3 {
+			font-size: 2rem;
+			font-weight: bold;
+			line-height: 2rem;
+			margin-bottom: 12px;
+			text-transform: uppercase;
+		}
+		img {
+			height: auto;
+			margin: 0 12px 12px;
+			-webkit-filter: grayscale(100%) contrast(118%);
+			filter: grayscale(100%);
+			image-rendering: pixelated;
+			border-radius: 8px;
+		}
+		p {
+			font-size: 1.25rem;
+			line-height: 2rem;
+			margin-bottom: 8px;
+			&.link {
+				text-align: center;
+			}
+			a {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+		}
+		hr {
+			margin: 32px auto;
+		}
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		background: var(--modal-background);
+		bottom: 0px;
+		left: 50%;
+		top: 100%;
+		border-radius: 50%;
+		-webkit-transition: all $animation-time cubic-bezier(0.215, 0.61, 0.355, 1),
+			color 0ms, background-color 0ms;
+		transition: all $animation-time cubic-bezier(0.215, 0.61, 0.355, 1),
+			color 0ms, background-color 0ms;
+	}
+	&.open {
+		visibility: visible;
+		background: var(--modal-background);
+		transform: translateY(0px);
+		.header,
+		.content {
+			position: relative;
+			opacity: 1;
+			z-index: 1;
+			-webkit-transition: all $animation-time
+					cubic-bezier(0.55, 0.055, 0.675, 0.19),
+				color 0ms, background-color 0ms;
+			transition: all $animation-time cubic-bezier(0.55, 0.055, 0.675, 0.19),
+				color 0ms, background-color 0ms;
+		}
+		&:before {
+			height: 200%;
+			width: 200%;
+			border-radius: 50%;
+			top: 50%;
+			left: 50%;
+			margin-left: -100%;
+			margin-top: -100%;
+			display: block;
+			-webkit-transition: all $animation-time
+					cubic-bezier(0.215, 0.61, 0.355, 1),
+				color 0ms, background-color 0ms;
+			transition: all $animation-time cubic-bezier(0.215, 0.61, 0.355, 1),
+				color 0ms, background-color 0ms;
+		}
+	}
+}
+@media all and (min-width: $tablets-min-width) {
+	.root {
+		.header {
+			.title {
+				font-size: 1.6rem;
+			}
+			.close {
+				font-size: 1.6rem;
+			}
+		}
+		.content {
+			h3 {
+				margin-bottom: 18px;
+			}
+			hr {
+				margin: 40px auto;
+			}
+		}
+	}
+}
+@media all and (min-width: $laptops-min-width) {
+	.root {
+		.content {
+			h3 {
+				font-size: 2.8rem;
+				line-height: 3rem;
+				margin-bottom: 24px;
+			}
+			img {
+				margin: 0 16px 16px;
+			}
+			p {
+				font-size: 1.6rem;
+				line-height: 2.8rem;
+				margin-bottom: 20px;
+			}
+			hr {
+				margin: 52px auto;
+			}
+		}
+	}
+}

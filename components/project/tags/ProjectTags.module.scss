@@ -1,0 +1,21 @@
+@import "../../../styles/settings/media-sizes";
+.root {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: 1.3rem;
+	font-weight: bold;
+	font-style: italic;
+	margin: 12px auto 16px;
+	gap: 6px;
+}
+@media all and (min-width: $laptops-min-width) {
+	.root {
+		font-size: 1.6rem;
+		.item {
+			margin: 4px 12px;
+		}
+	}
+}

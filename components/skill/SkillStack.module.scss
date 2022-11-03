@@ -1,0 +1,21 @@
+@import "../../styles/settings/media-sizes";
+.root {
+	justify-content: space-around;
+	row-gap: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+@media all and (min-width: $tablets-min-width) {
+	.root {
+		row-gap: 40px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding: 20px 4px;
+	}
+}
+@media all and (min-width: $laptops-min-width) {
+	.root {
+		row-gap: 60px;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		padding: 28px 4px;
+	}
+}

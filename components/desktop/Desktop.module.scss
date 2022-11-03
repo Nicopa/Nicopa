@@ -1,0 +1,8 @@
+$animation-time: 400ms;
+.root {
+	background: var(--desktop-background);
+	transition: background-color $animation-time;
+	background-size: cover;
+	height: 100vh;
+	cursor: url("/GhostlyArrow.cur"), auto;
+}

@@ -1,0 +1,24 @@
+@import "../styles/settings/media-sizes";
+.profile-img {
+	width: 100%;
+	max-width: 320px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.project-img {
+	width: 100%;
+	max-width: 480px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media all and (min-width: $laptops-min-width) {
+	.profile-img {
+		float: right;
+	}
+	.project-img {
+		float: left;
+	}
+}

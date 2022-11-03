@@ -1,0 +1,12 @@
+@import "../../../styles/settings/media-sizes";
+.root {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+@media all and (min-width: $laptops-min-width) {
+	.root {
+		justify-content: start;
+	}
+}

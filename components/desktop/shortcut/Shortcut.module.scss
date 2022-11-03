@@ -1,0 +1,21 @@
+.root {
+	margin: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	.icon {
+		border-radius: 50%;
+		background-color: var(--shortcut-icon-background);
+		padding: 12px;
+		margin: 4px;
+		color: var(--shortcut-icon-color);
+	}
+	.label {
+		text-align: center;
+		font-size: 1.2rem;
+		max-width: 100%;
+		color: var(--shortcut-label-color);
+	}
+}

@@ -1,0 +1,12 @@
+.root {
+	position: sticky;
+	background: var(--topbar-background);
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 1.1rem;
+	color: var(--topbar-color);
+	padding: 4px;
+	display: flex;
+	justify-content: space-between;
+}

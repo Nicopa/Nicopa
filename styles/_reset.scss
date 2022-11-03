@@ -1,0 +1,84 @@
+/* Box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Margins */
+* {
+	margin: 0;
+}
+
+/* Heights */
+html,
+body {
+	height: 100vh;
+}
+* {
+	line-height: 100%;
+}
+
+/* Text rendering */
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Typography */
+html {
+	font-size: 10px;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Lists */
+ol,
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+/* Underlines */
+a {
+	text-decoration: none;
+}
+
+/* Colors */
+* {
+	color: inherit;
+}
+
+/* Font-weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+/* Forms */
+textarea {
+	resize: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+	width: 100%;
+}
+input[type="submit"],
+button[type="submit"] {
+	cursor: pointer;
+}
+fieldset {
+	border: 0;
+}
