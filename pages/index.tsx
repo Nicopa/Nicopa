@@ -90,7 +90,7 @@ export default function Home() {
 					<Shortcut
 						icon={<IoDocumentText size={36} />}
 						label="Resume"
-						href="/resume"
+						href="https://nicopa.github.io/Nicopa/resume"
 					/>
 				</ShortcutStack>
 				<Modal
@@ -128,10 +128,11 @@ export default function Home() {
 					<h3>Career transitions</h3>
 					<p>
 						After that, I tried a career transition to cooking because I learned
-						how to make sushi and there were no restaurants in my town . From scratch I started as an apprentice sushiman
-						and after two years I opened my own restaurant. But in October 2021,
-						I didn&apos;t get the financial independence I was looking for, so I
-						decided to go back to software coding which is my first passion.
+						how to make sushi and there were no restaurants in my town . From
+						scratch I started as an apprentice sushiman and after two years I
+						opened my own restaurant. But in October 2021, I didn&apos;t get the
+						financial independence I was looking for, so I decided to go back to
+						software coding which is my first passion.
 					</p>
 					<h3>Currently</h3>
 					<p>

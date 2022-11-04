@@ -54,6 +54,9 @@
 }
 .content {
 	padding: 80px 20px 20px;
+	section {
+		page-break-inside: avoid;
+	}
 }
 .profile-picture {
 	border-radius: 50%;

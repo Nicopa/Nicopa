@@ -49,7 +49,7 @@ export default function Resume() {
 					</div>
 				</div>
 				<div className={styles.content}>
-					<div className={styles["personal-info-box"]}>
+					<section className={styles["personal-info-box"]}>
 						<h1>Nicholas Panazzolo Amarante</h1>
 						<p>31 years old</p>
 						<p>
@@ -77,8 +77,8 @@ export default function Resume() {
 							</a>
 						</p>
 						<address>Flores da Cunha, RS, Brazil</address>
-					</div>
-					<div className={styles["standard-box"]}>
+					</section>
+					<section className={styles["standard-box"]}>
 						<h2>Summary</h2>
 						<p>
 							I'm looking for a remote job opportunity in software development.
@@ -89,8 +89,8 @@ export default function Resume() {
 							I consider myself a self-taught professional (as any developer
 							should be) and always willing to learn new technologies.
 						</p>
-					</div>
-					<div className={styles["standard-box"]}>
+					</section>
+					<section className={styles["standard-box"]}>
 						<h2>Experience</h2>
 						<div className={styles["experience-item"]}>
 							<div className={styles.title}>Software developer</div>
@@ -154,8 +154,8 @@ export default function Resume() {
 								backend language.
 							</p>
 						</div>
-					</div>
-					<div className={styles["standard-box"]}>
+					</section>
+					<section className={styles["standard-box"]}>
 						<h2>Education</h2>
 						<div className={styles["experience-item"]}>
 							<div className={styles.title}>
@@ -176,8 +176,8 @@ export default function Resume() {
 								finish my degree because I was dissatisfied with the course.
 							</p>
 						</div>
-					</div>
-					<div className={`${styles["standard-box"]} ${styles.icons}`}>
+					</section>
+					<section className={`${styles["standard-box"]} ${styles.icons}`}>
 						<h2>Skills</h2>
 						<p>
 							These are some of the technologies that I managed to make at least
@@ -207,8 +207,8 @@ export default function Resume() {
 								label="SCSS/Sass"
 							/>
 						</SkillStack>
-					</div>
-					<div className={styles.projects}>
+					</section>
+					<section className={styles.projects}>
 						<h2>Personal projects</h2>
 						<div className={styles.project}>
 							<div className={styles.title}>
@@ -285,7 +285,7 @@ export default function Resume() {
 							</p>
 							<div className={styles.techs}>Typescript, Angular</div>
 						</div>
-					</div>
+					</section>
 				</div>
 			</div>
 		</main>
