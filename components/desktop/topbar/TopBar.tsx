@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./TopBar.module.scss";
 function Clock() {
 	const [time, setTime] = useState<Date>(new Date());
-	setTimeout(() => setTime(new Date()), 3500);
+	useEffect(() => {
+		return () => {
+			setTimeout(() => setTime(new Date()), 3500);
+		};
+	}, []);
 	return (
 		<span>
 			{time.getHours().toString().padStart(2, "0")}:
