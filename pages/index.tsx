@@ -55,7 +55,46 @@ export default function Home() {
 				></meta>
 				<link rel="icon" href="./favicon.ico" />
 			</Head>
-			<main>
+			<style jsx global>
+				{`
+					html:before {
+						content: "";
+						background-color: #282828;
+						background-image: url("loading.svg");
+						background-repeat: no-repeat;
+						background-position: center;
+						position: absolute;
+						z-index: 1000;
+						top: 0;
+						left: 0;
+						width: 100vw;
+						height: 100vh;
+						overflow: hidden;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+					html.loaded:before {
+						animation-name: loading;
+						animation-duration: 2s;
+						animation-iteration-count: 1;
+						background-image: none;
+					}
+					@keyframes loading {
+						0% {
+							opacity: 1;
+						}
+						99% {
+							opacity: 0;
+						}
+						100% {
+							content: none;
+							display: none;
+						}
+					}
+				`}
+			</style>
+			<main className={styles.root}>
 				<ShortcutStack>
 					<Shortcut
 						icon={<BsPersonFill size={36} />}
