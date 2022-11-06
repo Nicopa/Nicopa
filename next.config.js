@@ -2,12 +2,13 @@
 const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
-	basePath: "/Nicopa",
-	/* images: {
-		loader: "akamai",
-		path: "",
-	},
-	assetPrefix: "./", */
+	basePath: process.env.BASE_PATH || undefined,
+	images:
+		process.env.NODE_ENV === "production"
+			? {
+					unoptimized: true,
+			  }
+			: undefined,
+	assetPrefix: process.env.ASSET_PREFIX || undefined,
 };
-
 module.exports = nextConfig;
