@@ -16,9 +16,15 @@ export default function Desktop({ children }: DesktopProps) {
 			className={`${styles.root} ${theme}-theme`}
 			style={{ cursor: "url(GhostlyArrow.cur), auto" }}
 		>
-			<TopBar />
-			<div>{children}</div>
-			<ToolBar theme={theme} themeModeOnClick={handleThemeModeOnClick} />
+			<div
+				className={styles.background}
+				style={{ backgroundImage: "url(background1.svg)" }}
+			></div>
+			<div className={styles.content}>
+				<TopBar />
+				<div>{children}</div>
+				<ToolBar theme={theme} themeModeOnClick={handleThemeModeOnClick} />
+			</div>
 		</div>
 	);
 }
