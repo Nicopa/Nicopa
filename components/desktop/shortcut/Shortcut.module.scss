@@ -1,3 +1,4 @@
+@import "../../../styles/settings/media-sizes";
 .root {
 	margin: 12px;
 	display: flex;
@@ -17,5 +18,10 @@
 		font-size: 1.2rem;
 		max-width: 100%;
 		color: var(--shortcut-label-color);
+	}
+}
+@media all and (min-width: $laptops-min-width) {
+	.root {
+		margin: 20px;
 	}
 }

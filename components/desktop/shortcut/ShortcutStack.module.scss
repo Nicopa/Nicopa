@@ -5,6 +5,11 @@
 	flex-wrap: wrap;
 	justify-content: center;
 }
+@media all and (min-width: $tablets-min-width) {
+	.root {
+		margin: 24px;
+	}
+}
 @media all and (min-width: $laptops-min-width) {
 	.root {
 		justify-content: start;
