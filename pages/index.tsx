@@ -228,7 +228,10 @@ export default function Home() {
 						register for any services. So, here is the Team Draft!
 					</p>
 					<ProjectTags techs={["Typescript", "React", "Material UI | MUI"]} />
-					<ProjectLinks github="https://github.com/Nicopa/team-draft-web" />
+					<ProjectLinks
+						github="https://github.com/Nicopa/team-draft-web"
+						app="https://team-draft.netlify.app/"
+					/>
 					<hr />
 					<h3>SNES Bomberman 3 in Python</h3>
 					<Image
