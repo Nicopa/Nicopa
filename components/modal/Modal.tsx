@@ -15,6 +15,7 @@ export default function Modal({
 }: ModalProps) {
 	return (
 		<div className={`${styles.root}${open ? " " + styles.open : ""}`}>
+			<div className={styles["animation-mask"]}></div>
 			{title && (
 				<div className={styles.header}>
 					<span className={styles.close} onClick={onCloseClick}>
