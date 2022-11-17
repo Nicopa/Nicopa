@@ -111,14 +111,16 @@ export default function Resume() {
 								very different applications, from <b>legacy PHP</b> web systems,
 								<b>CodeIgniter</b>, to <b>Angular</b> and{" "}
 								<b>Next.js/React (Typescript)</b> web page development.
+								<br />
+								I'm also studying game development, which is an opportunity I'm
+								also looking for.
 							</p>
 						</div>
 						<div className={styles["experience-item"]}>
-							<div className={styles.title}>Sushi chef / Restaurant owner</div>
-							<div className={styles.place}>
-								Nikorasu Culinária Japonesa - Flores da Cunha, RS, Brazil
+							<div className={styles.title}>Career transition</div>
+							<div className={styles.period}>
+								Apr 2016 - Oct 2021 (5 years, 7 months)
 							</div>
-							<div className={styles.period}>Apr 2016 - Oct 2021</div>
 							<p className={styles.description}>
 								I made a career transition because I learned to make sushi and
 								there were no restaurants in my town. So I decided to start from
@@ -133,8 +135,12 @@ export default function Resume() {
 						</div>
 						<div className={styles["experience-item"]}>
 							<div className={styles.title}>Full Stack Developer</div>
-							<div className={styles.place}>Agência Orin</div>
-							<div className={styles.period}>Jun 2014 - Mar 2016</div>
+							<div className={styles.place}>
+								Agência Orin - Flores da Cunha, RS, Brazil
+							</div>
+							<div className={styles.period}>
+								Jun 2014 - Mar 2016 (1 year, 10 months)
+							</div>
 							<p className={styles.description}>
 								I was responsible for the backend (<b>PHP</b>) and frontend of
 								web page development. The company was very small (5 people) so I
@@ -145,8 +151,12 @@ export default function Resume() {
 						</div>
 						<div className={styles["experience-item"]}>
 							<div className={styles.title}>Full Stack Developer</div>
-							<div className={styles.place}>BF2 Tecnologia</div>
-							<div className={styles.period}>Dec 2012 - Dec 2013</div>
+							<div className={styles.place}>
+								BF2 Tecnologia - Caxias do Sul, RS, Brazil
+							</div>
+							<div className={styles.period}>
+								Dec 2012 - Dec 2013 (1 year, 1 months)
+							</div>
 							<p className={styles.description}>
 								I started by doing some front pages and managed to be a full
 								stack developer after a few months. I worked with a team that
