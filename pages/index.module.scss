@@ -1,18 +1,10 @@
 @import "../styles/settings/media-sizes";
 .root {
-	img.profile-img {
-		width: 100%;
-		max-width: 320px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+	.profile-img {
+		width: 320px;
 	}
-	img.project-img {
-		width: 100%;
-		max-width: 480px;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
+	.project-img {
+		width: 480px;
 	}
 }
 
@@ -20,9 +12,11 @@
 	.root {
 		img.profile-img {
 			float: right;
+			margin-left: 16px;
 		}
 		img.project-img {
 			float: left;
+			margin-right: 16px;
 		}
 	}
 }

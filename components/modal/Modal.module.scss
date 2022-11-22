@@ -57,12 +57,18 @@ $animation-time: 500ms;
 			text-transform: uppercase;
 		}
 		img {
+			display: block;
 			height: auto;
-			margin: 0 12px 12px;
+			max-width: 100%;
+			margin: 0 auto 12px;
 			-webkit-filter: grayscale(100%) contrast(118%);
 			filter: grayscale(100%);
 			image-rendering: pixelated;
 			border-radius: 8px;
+			&:hover {
+				-webkit-filter: none;
+				filter: none;
+			}
 		}
 		p {
 			font-size: 1.25rem;
@@ -131,6 +137,7 @@ $animation-time: 500ms;
 			}
 		}
 		.content {
+			padding: 24px 36px;
 			h3 {
 				margin-bottom: 18px;
 			}
@@ -143,13 +150,11 @@ $animation-time: 500ms;
 @media all and (min-width: $laptops-min-width) {
 	.root {
 		.content {
+			padding: 40px 52px;
 			h3 {
 				font-size: 2.8rem;
 				line-height: 3rem;
 				margin-bottom: 24px;
-			}
-			img {
-				margin: 0 16px 16px;
 			}
 			p {
 				font-size: 1.6rem;
