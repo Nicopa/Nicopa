@@ -1,94 +1,4 @@
-.root {
-	font-family: sans-serif;
-	font-size: 14px;
-	h1 {
-		font-size: 32px;
-		margin-bottom: 12px;
-	}
-	h2 {
-		font-size: 20px;
-		font-weight: bold;
-		margin-top: 30px;
-		margin-bottom: 14px;
-		&:before {
-			content: "<";
-		}
-		&:after {
-			content: "/>";
-		}
-		&:before,
-		&:after {
-			padding: 0 4px;
-			opacity: 0.4;
-			vertical-align: middle;
-		}
-	}
-	h3 {
-		font-size: 18px;
-	}
-}
-.container {
-	width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	flex-direction: row;
-	background-color: white;
-}
-.sidebox {
-	color: white;
-	align-self: stretch;
-	position: relative;
-	flex: 1 0 194px;
-	&:before {
-		content: "";
-		background-color: #282828;
-		display: block;
-		position: absolute;
-		z-index: 1;
-		width: 100px;
-		height: 100%;
-		top: 0;
-		left: 44px;
-	}
-}
-.content {
-	padding: 80px 20px 20px;
-	section {
-		page-break-inside: avoid;
-	}
-}
-.profile-picture {
-	border-radius: 50%;
-	border: 4px solid #282828;
-	overflow: hidden;
-	position: absolute;
-	z-index: 2;
-	top: 100px;
-	.profile-img {
-		width: 180px;
-		height: auto;
-		border-radius: 50%;
-		border: 4px solid white;
-	}
-}
-.personal-info-box {
-	margin-bottom: 20px;
-	p,
-	address {
-		line-height: 22px;
-	}
-	svg {
-		vertical-align: middle;
-	}
-}
-.standard-box {
-	margin-bottom: 20px;
-	p {
-		line-height: 20px;
-		margin-bottom: 12px;
-	}
-}
+@import "../styles/settings/media-sizes";
 .experience-item {
 	margin-bottom: 18px;
 	.title {
@@ -106,8 +16,18 @@
 }
 .projects {
 	margin-bottom: 20px;
+	.stack {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 0 16px;
+	}
 	.project {
 		margin-bottom: 22px;
+		flex: 100%;
+		padding: 16px;
+		border: 1px solid #999999;
+		border-radius: 12px;
 	}
 	p {
 		line-height: 20px;
@@ -117,12 +37,13 @@
 		font-weight: bold;
 		font-size: 16px;
 		line-height: 20px;
-		margin-bottom: 8px;
+		margin-bottom: 12px;
 	}
 	.link {
 		font-weight: normal;
 		display: inline-block;
-		margin-left: 12px;
+		margin-top: 4px;
+		margin-left: 8px;
 		svg {
 			margin-right: 4px;
 			vertical-align: middle;
@@ -131,11 +52,27 @@
 	.techs {
 		font-style: italic;
 		font-size: 12px;
+		line-height: 140%;
 	}
 }
 .icons {
 	svg {
 		width: 40px !important;
 		height: 40px !important;
+	}
+}
+
+@media all and (min-width: $tablets-min-width) {
+	.projects {
+		.project {
+			flex: 50%;
+		}
+	}
+}
+@media all and (min-width: $laptops-min-width) {
+	.projects {
+		.project {
+			flex: 33.33%;
+		}
 	}
 }

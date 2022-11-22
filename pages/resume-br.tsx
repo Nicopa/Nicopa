@@ -18,118 +18,111 @@ import ResumeLayout from "../components/resume/ResumeLayout";
 import ResumeSection from "../components/resume/ResumeSection";
 import profilePicture from "../public/nicolas.webp";
 
-export default function Resume() {
+export default function ResumeBR() {
 	return (
 		<ResumeLayout
 			head={{
-				title: "Nicholas Amarante | Software Developer | Resume",
+				title: "Nícolas Amarante | Software Developer | Currículo",
 				description:
-					"Hi! I'm a software developer and this is my complete resume.",
+					"Olá! Eu sou desenvolvedor de software e este é o meu currículo completo.",
 			}}
 			personalInfo={{
-				fullname: "Nicholas Panazzolo Amarante",
-				age: "31 years old",
+				fullname: "Nícolas Panazzolo do Amarante",
+				age: "31 anos",
 				email: "nicopa_rs@hotmail.com",
 				linkedinURL: "https://www.linkedin.com/in/nicopa/",
 				linkedinShort: "linkedin.com/in/nicopa/",
 				githubURL: "https://nicopa.github.io/Nicopa",
 				githubShort: "nicopa.github.io/Nicopa",
-				address: "Flores da Cunha, RS, Brazil",
+				address: "Flores da Cunha, RS, Brasil",
 				profilePicture,
 			}}
 		>
 			<ResumeSection>
-				<h2>Summary</h2>
+				<h2>Sobre</h2>
 				<p>
-					I'm looking for a remote job opportunity in software development. My
-					biggest professional dream is to be working with companies around the
-					world and with the best developer teams.
+					Eu estou procurando por uma oportunidade de trabalho remoto em
+					desenvolvimento de software. Meu maior sonho profissional é estar
+					trabalhando com empresas ao redor do mundo e com as melhores equipes
+					de desenvolvedores.
 				</p>
 				<p>
-					I consider myself a self-taught professional (as any developer should
-					be) and always willing to learn new technologies.
+					Me considero um profissional autodidata (como todo desenvolvedor deve
+					ser) e sempre quero aprender novas tecnologias.
 				</p>
 			</ResumeSection>
 			<ResumeSection>
-				<h2>Experience</h2>
+				<h2>Experiência</h2>
 				<div className={styles["experience-item"]}>
 					<div className={styles.title}>Software developer</div>
-					<div className={styles.place}>Self-employed / freelance</div>
-					<div className={styles.period}>Jan 2022 - Present</div>
+					<div className={styles.place}>Freelancer</div>
+					<div className={styles.period}>Jan 2022 - Presente</div>
 					<p className={styles.description}>
-						I have been splitting my time between studying the new technologies
-						and doing some freelance demands for a local company (Coopertec
-						Soluções -{" "}
-						<a
-							href="https://www.linkedin.com/company/coopertec-solucoes/"
-							target="_blank"
-							rel="noreferrer"
-						>
-							linkedin.com/company/coopertec-solucoes/
-						</a>
-						. Over the last few months, I've been able to code and maintain very
-						different applications, from <b>legacy PHP</b> web systems,
-						<b>CodeIgniter</b>, to <b>Angular</b> and{" "}
-						<b>Next.js/React (Typescript)</b> web page development.
+						Eu tenho dividido o meu tempo entre estudar novas tecnologias e
+						fazer algumas requisições de freelances para empresas locais. Nos
+						últimos meses, tenho conseguido programar e dar manutenção para
+						diferentes tipos de aplicações, desde sistemas legados web em PHP,{" "}
+						<b>CodeIgniter</b>, até o desenvolvimento de aplicações/páginas em{" "}
+						<b>Angular</b> e <b>Next.js/React</b> em <b>Typescript</b>.
 						<br />
-						I'm also studying game development, which is an opportunity I'm also
-						looking for.
+						Eu também estou estudando o desenvolvimento de jogos, que é uma
+						oportunidade pela qual eu também me interesso.
 					</p>
 				</div>
 				<div className={styles["experience-item"]}>
-					<div className={styles.title}>Career transition</div>
+					<div className={styles.title}>Transição de carreira</div>
 					<div className={styles.period}>
-						Apr 2016 - Oct 2021 (5 years, 7 months)
+						Abr 2016 - Out 2021 (5 anos, 7 meses)
 					</div>
 					<p className={styles.description}>
-						I made a career transition because I learned to make sushi and there
-						were no restaurants in my town. So I decided to start from the
-						scratch, and I managed to open my own restaurant and work in it for
-						3 years (even during the pandemic). <br />I decided to leave because
-						the financial return of this type of business in my region was not
-						worth it.
+						Fiz uma transição de carreira porque eu aprendi a fazer sushi e não
+						haviam restaurantes em minha cidade. Então eu decidi começar do
+						zero, e consegui abrir o meu próprio restaurante e trabalhar nele
+						por 3 anos (mesmo durante a pandemia). Eu decidi parar porque o
+						retorno financeiro deste tipo de negócio na minha região não estava
+						valendo a pena.
 						<br />
-						P.S: In March, 2017, I went to Tokyo, Japan, to do a sushi course.
-						Every class was given in English.
+						P.S: Em março de 2017, eu fui para Tokyo, no Japão, para fazer um
+						curso de sushi. Todas as aulas foram lecionadas em inglês.
 					</p>
 				</div>
 				<div className={styles["experience-item"]}>
 					<div className={styles.title}>Full Stack Developer</div>
 					<div className={styles.place}>
-						Agência Orin - Flores da Cunha, RS, Brazil
+						Agência Orin - Flores da Cunha, RS, Brasil
 					</div>
 					<div className={styles.period}>
-						Jun 2014 - Mar 2016 (1 year, 10 months)
+						Jun 2014 - Mar 2016 (1 ano, 10 meses)
 					</div>
 					<p className={styles.description}>
-						I was responsible for the backend (<b>PHP</b>) and frontend of web
-						page development. The company was very small (5 people) so I was
-						able to learn a little about everything that a project involves
-						(design, SEO, brainstorms, etc) and help and give suggestions about
-						the team's work process and projects.
+						Eu fui responsável pelo backend (<b>PHP</b>) e frontend de
+						aplicações web. A empresa era pequena (5 colaboradores) então eu
+						pude aprender um pouco de tudo que está envolvido no desenvolvimento
+						de um projeto (design, SEO, brainstorms, etc) e também ajudar e dar
+						sugestões sobre o processo de trabalho da equipe.
 					</p>
 				</div>
 				<div className={styles["experience-item"]}>
 					<div className={styles.title}>Full Stack Developer</div>
 					<div className={styles.place}>
-						BF2 Tecnologia - Caxias do Sul, RS, Brazil
+						BF2 Tecnologia - Caxias do Sul, RS, Brasil
 					</div>
 					<div className={styles.period}>
-						Dec 2012 - Dec 2013 (1 year, 1 months)
+						Dez 2012 - Dez 2013 (1 ano, 1 mês)
 					</div>
 					<p className={styles.description}>
-						I started by doing some front pages and managed to be a full stack
-						developer after a few months. I worked with a team that had 5
-						developers. I also worked mainly with <b>PHP</b> as backend
-						language.
+						Eu comecei fazendo algumas páginas frontend e consegui me tornar
+						full-stack depois de alguns meses. Eu trabalhei com uma equipe de 5
+						desenvolvedores. E também trabalhei principalmente com o <b>PHP</b>{" "}
+						no backend.
 					</p>
 				</div>
 			</ResumeSection>
 			<ResumeSection>
-				<h2>Skills</h2>
+				<h2>Habilidades</h2>
 				<p>
-					These are some of the technologies that I managed to make at least one
-					application:
+					Estas são algumas das tecnologias que eu consegui, ao menos,
+					desenvolver uma aplicação.
 				</p>
 				<SkillStack>
 					<SkillIcon
@@ -151,11 +144,11 @@ export default function Resume() {
 				</SkillStack>
 			</ResumeSection>
 			<ResumeSection className={styles.projects}>
-				<h2>Personal projects</h2>
+				<h2>Projetos pessoais</h2>
 				<div className={styles.stack}>
 					<div className={styles.project}>
 						<div className={styles.title}>
-							Financial Asset Manager
+							Gerenciador Financeiro Pessoal de Ativos
 							<span className={styles.link}>
 								<AiOutlineLink />
 								<a href="https://nicopa.github.io/Nicopa/">
@@ -164,11 +157,12 @@ export default function Resume() {
 							</span>
 						</div>
 						<p className={styles.description}>
-							This is my personal finance asset manager. Since I started
-							investing in stocks, bonds, funds, and other assets, I've been
-							using spreadsheets to keep track of my investments. Now, with this
-							app, I can control all my trades easier, faster and with custom
-							reports.
+							Este é o meu gerenciador financeiro pessoal de ativos. Desde que
+							comecei a investir em ações, tesouro, fundos e entre outros
+							ativos, eu tenho utilizado planilhas para controlar meus
+							investimentos. Agora, com esta aplicação, eu posso controlar todas
+							minhas negociações de forma mais fácil, rápida e com relatórios
+							customizados.
 						</p>
 						<div className={styles.techs}>
 							Typescript, Clean Architecture, TDD, DDD, Event Driven
@@ -187,9 +181,10 @@ export default function Resume() {
 							</span>
 						</div>
 						<p className={styles.description}>
-							Sometimes you just need a quick way to split your friends into
-							teams for the sports or games you like. And preferably without
-							having to register for any services. So, here is the Team Draft!
+							Algumas vezes, você só precisa de um jeito rápido de dividir o
+							seus amigos em times para os esportes que você joga. E de
+							preferência sem ter que se registrar em qualquer serviço ou
+							aplicação. Então, aqui está o Team Draft!
 						</p>
 						<div className={styles.techs}>
 							Typescript, React, Material UI MUI
@@ -197,7 +192,7 @@ export default function Resume() {
 					</div>
 					<div className={styles.project}>
 						<div className={styles.title}>
-							SNES Bomberman 3 in Python
+							SNES Bomberman 3 em Python
 							<span className={styles.link}>
 								<AiOutlineLink />
 								<a href="https://nicopa.github.io/Nicopa/">
@@ -206,14 +201,14 @@ export default function Resume() {
 							</span>
 						</div>
 						<p className={styles.description}>
-							For the old SNES Bomberman fans, this is the battle mode of the
-							SNES Bomberman 3 built with <b>PyGame</b> engine (<b>Python</b>).
+							Para os fãs do velho Bomberman, este é o modo batalha do SNES
+							Bomberman 3 feito com a engine <b>PyGame</b> (<b>Python</b>).
 						</p>
 						<div className={styles.techs}>Python, PyGame, OOP</div>
 					</div>
 					<div className={styles.project}>
 						<div className={styles.title}>
-							Pokemon Memory Game in Angular
+							Pokemon Memory Game em Angular
 							<span className={styles.link}>
 								<AiOutlineLink />
 								<a href="https://nicopa.github.io/Nicopa/">
@@ -222,18 +217,18 @@ export default function Resume() {
 							</span>
 						</div>
 						<p className={styles.description}>
-							This is a pokemon memory game built in Angular, where instead of
-							searching for equal cards, you have to find each evolution set of
-							the first pokemon generation.
+							Este é um jogo de memória do Pokemon feito em Angular, onde ao
+							invés de procurar por cartas iguais, você deve procurar por cada
+							conjunto de evoluções da primeira geração de pokemons.
 						</p>
 						<div className={styles.techs}>Typescript, Angular</div>
 					</div>
 				</div>
 			</ResumeSection>
 			<ResumeSection>
-				<h2>Languages</h2>
+				<h2>Idiomas</h2>
 				<ul className={styles["item-list"]}>
-					<li>Portuguese(BR) - Native</li>
+					<li>Português(BR) - Nativo</li>
 					<li>
 						English - Advanced: I can talk, read and write. I just need a daily
 						habit of talking to people to get fluent.

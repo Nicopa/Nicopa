@@ -196,7 +196,7 @@ export default function Home() {
 						This is my personal finance asset manager. Since I started investing
 						in stocks, bonds, funds, and other assets, I&apos;ve been using
 						spreadsheets to keep track of my investments. Now, with this app, I
-						can control all my trades easier, faster and with better reports.
+						can control all my trades easier, faster and with custom reports.
 					</p>
 					<ProjectTags
 						techs={[
