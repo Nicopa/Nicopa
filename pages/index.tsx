@@ -312,7 +312,7 @@ export default function Home() {
 					onCloseClick={() => setOpenResumeDialog(false)}
 				>
 					<a
-						href="/resume"
+						href="resume"
 						target="_blank"
 						rel="noreferrer"
 						onClick={() => setOpenResumeDialog(false)}
@@ -321,7 +321,7 @@ export default function Home() {
 						English resume
 					</a>
 					<a
-						href="/resume-br"
+						href="resume-br"
 						target="_blank"
 						rel="noreferrer"
 						onClick={() => setOpenResumeDialog(false)}
