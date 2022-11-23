@@ -34,6 +34,7 @@ import {
 	SiGithub,
 } from "react-icons/si";
 import styles from "./index.module.scss";
+import Dialog from "../components/dialog/Dialog";
 
 export default function Home() {
 	const [openAboutMeModal, setOpenAboutMeModal] = useState<boolean>(false);
@@ -41,6 +42,7 @@ export default function Home() {
 		useState<boolean>(false);
 	const [openSkillsModal, setOpenSkillsModal] = useState<boolean>(false);
 	const [openContactModal, setOpenContactModal] = useState<boolean>(false);
+	const [openResumeDialog, setOpenResumeDialog] = useState<boolean>(false);
 	return (
 		<Desktop>
 			<Head>
@@ -129,7 +131,7 @@ export default function Home() {
 					<Shortcut
 						icon={<IoDocumentText size={36} />}
 						label="Resume"
-						href="https://nicopa.github.io/Nicopa/resume"
+						onClick={() => setOpenResumeDialog(true)}
 					/>
 				</ShortcutStack>
 				<Modal
@@ -305,6 +307,29 @@ export default function Home() {
 						</a>
 					</p>
 				</Modal>
+				<Dialog
+					open={openResumeDialog}
+					onCloseClick={() => setOpenResumeDialog(false)}
+				>
+					<a
+						href="/resume"
+						target="_blank"
+						rel="noreferrer"
+						onClick={() => setOpenResumeDialog(false)}
+						className={styles["resume-link"]}
+					>
+						English resume
+					</a>
+					<a
+						href="/resume-br"
+						target="_blank"
+						rel="noreferrer"
+						onClick={() => setOpenResumeDialog(false)}
+						className={styles["resume-link"]}
+					>
+						Portuguese(BR) resume
+					</a>
+				</Dialog>
 			</main>
 		</Desktop>
 	);

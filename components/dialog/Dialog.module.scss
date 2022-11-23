@@ -1,23 +1,11 @@
 @import "../../styles/settings/media-sizes";
-$animation-time: 500ms;
 .root {
 	position: absolute;
 	overflow: hidden;
-	top: 10%;
-	left: 10%;
-	right: 10%;
-	bottom: 10%;
-	transform: translateY(110%);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transition: transform $animation-time ease-in-out,
-		opacity $animation-time ease-in-out,
-		border-radius $animation-time ease-in-out;
-	transition: transform $animation-time ease-in-out,
-		opacity $animation-time ease-in-out,
-		border-radius $animation-time ease-in-out;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	opacity: 0;
-	border-radius: 50%;
 	display: flex;
 	flex-direction: column;
 	color: var(--modal-color);
@@ -27,10 +15,6 @@ $animation-time: 500ms;
 		padding: 8px 12px;
 		opacity: 0;
 		box-shadow: 0 1px 1px var(--modal-header-shadow-color);
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		-webkit-transition: opacity 0ms ease-in-out $animation-time;
-		transition: opacity 0ms ease-in-out $animation-time;
 		.title {
 			font-size: 1.4rem;
 			font-weight: bold;
@@ -46,10 +30,6 @@ $animation-time: 500ms;
 		padding: 8px 12px;
 		overflow-y: auto;
 		width: 100%;
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		-webkit-transition: opacity 0ms ease-in-out $animation-time;
-		transition: opacity 0ms ease-in-out $animation-time;
 		h3 {
 			font-size: 2rem;
 			font-weight: bold;
@@ -87,43 +67,14 @@ $animation-time: 500ms;
 			margin: 32px auto;
 		}
 	}
-	.animation-mask {
-		display: block;
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		background: var(--modal-background);
-		bottom: 0px;
-		left: 50%;
-		top: 115%;
-		border-radius: 50%;
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		-webkit-transition: left $animation-time ease-in-out,
-			margin-left $animation-time ease-in-out,
-			border-radius $animation-time ease-in-out;
-		transition: left $animation-time ease-in-out,
-			margin-left $animation-time ease-in-out,
-			border-radius $animation-time ease-in-out;
-	}
 	&.open {
 		opacity: 1;
-		transform: translateY(0px);
 		border-radius: 8px;
 		.header,
 		.content {
 			position: relative;
 			opacity: 1;
 			z-index: 1;
-		}
-		.animation-mask {
-			height: 200%;
-			width: 200%;
-			border-radius: 10%;
-			top: 100%;
-			left: 50%;
-			margin-left: -100%;
-			margin-top: -100%;
 		}
 	}
 }
@@ -151,7 +102,6 @@ $animation-time: 500ms;
 @media all and (min-width: $laptops-min-width) {
 	.root {
 		.content {
-			padding: 40px 52px;
 			h3 {
 				font-size: 2.8rem;
 				line-height: 3rem;

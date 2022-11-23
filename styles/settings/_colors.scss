@@ -20,6 +20,7 @@
 	--modal-background: #323232;
 	--modal-color: #ffffff;
 	--modal-header-shadow-color: #161616;
+	--modal-shadow-color: rgba(120, 120, 120, 0.3);
 }
 .light-theme,
 .default {
@@ -44,4 +45,5 @@
 	--modal-background: #ffffff;
 	--modal-color: #000000;
 	--modal-header-shadow-color: #dddddd;
+	--modal-shadow-color: rgba(120, 120, 120, 0.3);
 }
