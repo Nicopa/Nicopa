@@ -53,11 +53,22 @@ export default function Resume() {
 			<ResumeSection>
 				<h2>Experience</h2>
 				<div className={styles["experience-item"]}>
+					<div className={styles.title}>Backend software developer</div>
+					<div className={styles.place}>Void.gg</div>
+					<div className={styles.period}>Dec 2022 - Present</div>
+					<p className={styles.description}>
+						I specialized in developing and maintaining backend services for game tracker applications, focusing on Valorant player statistics.
+						Utilizing technologies such as NestJS (Node.js and Typescript), alongside the Riot API, I ensure high performance and responsiveness of our applications.
+						A key achievement was successfully refactoring our applications to support different infrastructures through migrations and reducing database costs.
+						I work collaboratively within a team of developers, providing suggestions, testing support and application reviews.
+					</p>
+				</div>
+				<div className={styles["experience-item"]}>
 					<div className={styles.title}>Software developer</div>
 					<div className={styles.place}>Self-employed / freelance</div>
-					<div className={styles.period}>Jan 2022 - Present</div>
+					<div className={styles.period}>Jan 2022 - Nov 2022</div>
 					<p className={styles.description}>
-						I have been splitting my time between studying the new technologies
+						I divided my time between studying the new technologies
 						and doing some freelance demands for a local company (Coopertec
 						Soluções -{" "}
 						<a
@@ -67,13 +78,10 @@ export default function Resume() {
 						>
 							linkedin.com/company/coopertec-solucoes/
 						</a>
-						. Over the last few months, I've been able to code and maintain very
+						. I managed to code and maintain very
 						different applications, from <b>legacy PHP</b> web systems,
 						<b>CodeIgniter</b>, to <b>Angular</b> and{" "}
 						<b>Next.js/React (Typescript)</b> web page development.
-						<br />
-						I'm also studying game development, which is an opportunity I'm also
-						looking for.
 					</p>
 				</div>
 				<div className={styles["experience-item"]}>
