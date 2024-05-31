@@ -41,10 +41,7 @@ export default function ResumeBR() {
 			<ResumeSection>
 				<h2>Sobre</h2>
 				<p>
-					Eu estou procurando por uma oportunidade de trabalho remoto em
-					desenvolvimento de software. Meu maior sonho profissional é estar
-					trabalhando com empresas ao redor do mundo e com as melhores equipes
-					de desenvolvedores.
+					Meu objetivo é trabalhar com empresas do exterior para melhorar minhas habilidades linguísticas e aprender com os melhores desenvolvedores.
 				</p>
 				<p>
 					Me considero um profissional autodidata (como todo desenvolvedor deve
@@ -54,9 +51,20 @@ export default function ResumeBR() {
 			<ResumeSection>
 				<h2>Experiência</h2>
 				<div className={styles["experience-item"]}>
+					<div className={styles.title}>Backend software developer</div>
+					<div className={styles.place}>Void.gg</div>
+					<div className={styles.period}>Dez 2022 - Presente</div>
+					<p className={styles.description}>
+						Eu me especializei em desenvolver e manter serviços de backend para aplicativos de rastreamento de jogos, com foco em estatísticas de jogadores do Valorant.
+						Utilizando tecnologias como NestJS (Node.js e Typescript), juntamente com a API da Riot, garanto alto desempenho e capacidade de resposta de nossos aplicativos.
+						Uma conquista importante foi refatorar com sucesso nossos aplicativos para dar suporte a diferentes infraestruturas por meio de migrações e redução de custos de banco de dados.
+						Trabalho em colaboração com uma equipe de desenvolvedores, fornecendo sugestões, testando suporte e revisões de aplicativos.
+					</p>
+				</div>
+				<div className={styles["experience-item"]}>
 					<div className={styles.title}>Software developer</div>
 					<div className={styles.place}>Freelancer</div>
-					<div className={styles.period}>Jan 2022 - Presente</div>
+					<div className={styles.period}>Jan 2022 - Nov 2022</div>
 					<p className={styles.description}>
 						Eu tenho dividido o meu tempo entre estudar novas tecnologias e
 						fazer algumas requisições de freelances para empresas locais. Nos
