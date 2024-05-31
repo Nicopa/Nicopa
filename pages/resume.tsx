@@ -41,9 +41,7 @@ export default function Resume() {
 			<ResumeSection>
 				<h2>Summary</h2>
 				<p>
-					I'm looking for a remote job opportunity in software development. My
-					biggest professional dream is to be working with companies around the
-					world and with the best developer teams.
+					My goal is to work with companies abroad to improve my language skills and learn from the best developers.
 				</p>
 				<p>
 					I consider myself a self-taught professional (as any developer should
