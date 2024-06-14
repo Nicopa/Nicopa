@@ -28,7 +28,7 @@ export default function ResumeBR() {
 			}}
 			personalInfo={{
 				fullname: "Nícolas Panazzolo do Amarante",
-				age: "31 anos",
+				age: "33 anos",
 				email: "nicopa_rs@hotmail.com",
 				linkedinURL: "https://www.linkedin.com/in/nicopa/",
 				linkedinShort: "linkedin.com/in/nicopa/",
