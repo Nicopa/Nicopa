@@ -40,13 +40,10 @@ export default function Resume() {
 		>
 			<ResumeSection>
 				<h2>Summary</h2>
-				<p>
-					My goal is to work with companies abroad to improve my language skills and learn from the best developers.
-				</p>
-				<p>
-					I consider myself a self-taught professional (as any developer should
-					be) and always willing to learn new technologies.
-				</p>
+				<p>Hello there! I'm Nick, short for Nicholas, and I am a remote software developer. My goal is to work with people from all around the world and improve my skills to add value to projects that aim at innovation and sustainability. Knowing the impact that my work has on society is crucial to me.</p>
+				<p>My typical workday involves starting off with a simple breakfast while catching up on the latest updates from my team and browsing through some daily news. Following that, I prioritize tasks for the day to ensure that I can tackle the most important ones during my peak productivity time in the morning.</p>
+				<p>Once the main task of the day is accomplished, I typically spend my afternoons reviewing my team's code and participating in video call meetings to keep up with the team's roadmap.</p>
+				<p>I consider myself a self-taught professional (as any developer should be) and always willing to learn new technologies.</p>
 			</ResumeSection>
 			<ResumeSection>
 				<h2>Experience</h2>
@@ -58,6 +55,7 @@ export default function Resume() {
 						I specialized in developing and maintaining backend services for game tracker applications, focusing on Valorant player statistics.
 						Utilizing technologies such as NestJS (Node.js and Typescript), alongside the Riot API, I ensure high performance and responsiveness of our applications.
 						A key achievement was successfully refactoring our applications to support different infrastructures through migrations and reducing database costs.
+						I was also able to learn new skills such as Docker, Kafka (microservices), and AWS.
 						I work collaboratively within a team of developers, providing suggestions, testing support and application reviews.
 					</p>
 				</div>

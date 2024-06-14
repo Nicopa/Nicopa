@@ -40,13 +40,10 @@ export default function ResumeBR() {
 		>
 			<ResumeSection>
 				<h2>Sobre</h2>
-				<p>
-					Meu objetivo é trabalhar com empresas do exterior para melhorar minhas habilidades linguísticas e aprender com os melhores desenvolvedores.
-				</p>
-				<p>
-					Me considero um profissional autodidata (como todo desenvolvedor deve
-					ser) e sempre quero aprender novas tecnologias.
-				</p>
+				<p>Olá! Sou um desenvolvedor de software remote. Meu objetivo é trabalhar com pessoas do mundo todo e melhorar minhas habilidades para agregar valor a projetos que visam inovação e sustentabilidade. Saber o impacto que meu trabalho tem na sociedade é crucial para mim.</p>
+				<p>Meu dia de trabalho típico envolve começar com um café da manhã simples enquanto acompanho as últimas atualizações da minha equipe e navego por algumas notícias diárias. Depois disso, priorizo ​​as tarefas do dia para garantir que posso lidar com as mais importantes durante meu pico de produtividade pela manhã.</p>
+				<p>Depois que a tarefa principal do dia é concluída, normalmente passo minhas tardes revisando o código da minha equipe e participando de reuniões por videochamada para acompanhar o roteiro da equipe.</p>
+				<p>Eu me considero um profissional autodidata (como qualquer desenvolvedor deve ser) e sempre disposto a aprender novas tecnologias.</p>
 			</ResumeSection>
 			<ResumeSection>
 				<h2>Experiência</h2>
