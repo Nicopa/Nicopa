@@ -150,8 +150,8 @@ export default function Home() {
 					/>
 					<h3>Who I am</h3>
 					<p>
-						I&apos;m Nícolas (you can call me Nick) and I&apos;m a junior
-						software developer. I&apos;m from{" "}
+						I&apos;m Nícolas (you can call me Nick) and I&apos;m a remote
+						software engineer. I&apos;m from{" "}
 						<a
 							href="https://goo.gl/maps/t97YgircM7rjYBGs7"
 							target="_blank"
@@ -159,7 +159,7 @@ export default function Home() {
 						>
 							Flores da Cunha, RS, Brazil
 						</a>{" "}
-						and I&apos;m 31 years old.
+						and I&apos;m {new Date().getFullYear() - 1991} years old.
 					</p>
 					<h3>First work</h3>
 					<p>
@@ -186,6 +186,11 @@ export default function Home() {
 					<h3>Stacks</h3>
 					<p>
 						In the backend, my main experience is with Node.js with Typescript, specially with NestJS framework, and I have experience with PHP and Codeigniter framework. In the frontend, I use React and/or Angular, and I have experience with Next.js. I also have experience with databases such as MySQL, Postgres and MongoDB.
+					</p>
+					<h3>Routine</h3>
+					<p>
+						My typical workday involves starting off with a simple breakfast while catching up on the latest updates from my team and browsing through some daily news. Following that, I prioritize tasks for the day to ensure that I can tackle the most important ones during my peak productivity time in the morning.<br />
+						Once the main task of the day is accomplished, I typically spend my afternoons reviewing my team's code and participating in video call meetings to keep up with the team's roadmap.
 					</p>
 				</Modal>
 				<Modal
