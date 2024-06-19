@@ -56,7 +56,7 @@ export default function ResumeBR() {
 					<div className={styles.period}>Dez 2022 - Mai 2024</div>
 					<p className={styles.description}>
 						Eu me especializei em desenvolver e manter serviços de backend para APIs de estatísticas de jogos, especialmente para Valorant.
-						Utilizando tecnologias como NestJS (Node.js e Typescript), juntamente com a API da Riot, garanti alto desempenho e capacidade de resposta para as APIs.
+						Utilizando tecnologias como <b>NestJS (Node.js e Typescript)</b>, juntamente com a API da Riot, garanti alto desempenho e capacidade de resposta para as APIs.
 						Uma conquista importante foi refatorar com sucesso nossas aplicações para dar suporte a diferentes infraestruturas por meio de migrações e redução de custos de banco de dados.
 						Trabalhei em colaboração com uma equipe de desenvolvedores remotos, fornecendo sugestões, testando suporte e revisões de aplicativos.
 					</p>

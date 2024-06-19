@@ -56,7 +56,7 @@ export default function Resume() {
 					<div className={styles.period}>Dec 2022 - May 2024</div>
 					<p className={styles.description}>
 						I specialized in developing and maintaining backend services for game statistics tracker APIs, specially for Valorant.
-						Utilizing technologies such as NestJS (Node.js and Typescript), alongside the Riot API, I ensured high performance and responsiveness for the APIs.
+						Utilizing technologies such as <b>NestJS (Node.js and Typescript)</b>, alongside the Riot API, I ensured high performance and responsiveness for the APIs.
 						A key achievement was successfully refactoring our applications in order to support different infrastructures through required migrations and reducing database costs.
 						Other stacks used were <b>Docker</b>, <b>Kafka</b> (microservices), <b>Redis</b>, <b>BullMQ</b>, <b>AWS</b> and <b>Python</b> for small scripts.
 						I worked collaboratively within a team of remote developers, providing suggestions, testing support and application reviews.

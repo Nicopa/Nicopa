@@ -15,7 +15,7 @@ import ProjectLinks from "../components/project/links/ProjectLinks";
 import SkillStack from "../components/skill/SkillStack";
 import SkillIcon from "../components/skill/SkillIcon";
 import { BiMailSend } from "react-icons/bi";
-import { BsPersonFill } from "react-icons/bs";
+import { BsPersonFill, BsFillBookmarksFill /* BsAwardFill */ } from "react-icons/bs";
 import { AiOutlineAppstore } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi";
 import { IoDocumentText } from "react-icons/io5";
@@ -41,6 +41,7 @@ import Dialog from "../components/dialog/Dialog";
 
 export default function Home() {
 	const [openAboutMeModal, setOpenAboutMeModal] = useState<boolean>(false);
+	const [openExperienceModal, setOpenExperienceModal] = useState<boolean>(false);
 	const [openMyProjectsModal, setOpenMyProjectsModal] =
 		useState<boolean>(false);
 	const [openSkillsModal, setOpenSkillsModal] = useState<boolean>(false);
@@ -105,6 +106,11 @@ export default function Home() {
 						icon={<BsPersonFill size={36} />}
 						label="About Me"
 						onClick={() => setOpenAboutMeModal(true)}
+					/>
+					<Shortcut
+						icon={<BsFillBookmarksFill size={36} />}
+						label="Experience"
+						onClick={() => setOpenExperienceModal(true)}
 					/>
 					<Shortcut
 						icon={<AiOutlineAppstore size={36} />}
@@ -194,6 +200,25 @@ export default function Home() {
 					</p>
 				</Modal>
 				<Modal
+					open={openExperienceModal}
+					title="Experience"
+					onCloseClick={() => setOpenExperienceModal(false)}
+				>
+					<h3>Experience</h3>
+					<h4>Backend Software Engineer - Void.gg | Dec 2022 - May 2024</h4>
+					<p>I specialized in developing and maintaining backend services for game statistics tracker APIs, specially for Valorant. Utilizing technologies such as <b>NestJS (Node.js and Typescript)</b>, alongside the Riot API, I ensured high performance and responsiveness for the APIs. A key achievement was successfully refactoring our applications in order to support different infrastructures through required migrations and reducing database costs. Other stacks used were <b>Docker</b>, <b>Kafka</b> (microservices), <b>Redis</b>, <b>BullMQ</b>, <b>AWS</b> and <b>Python</b> for small scripts. I worked collaboratively within a team of remote developers, providing suggestions, testing support and application reviews.</p>
+					<h4>Full Stack Software Engineer - Coopertec Soluções | Jan 2022 - Nov 2022 (11 months)</h4>
+					<p>I managed to code and maintain very different web applications. I developed and fixed features for a logistics client that required using <b>legacy PHP (version 4)</b> and <b>CodeIgniter</b>. I also worked using <b>Angular</b> and <b>Next.js/React (Typescript)</b> in frontend projects for other clients.</p>
+					<h4>Full Stack Software Engineer - Agência Orin | Jun 2014 - Mar 2016 (1 year, 10 months)</h4>
+					<p>
+						I was the backend and frontend lead. I was responsible for building web pages using (<b>PHP</b>) and jQuery.
+						Working with a small team allowed me to learn a little about everything that a project involves (design, SEO, brainstorms, etc) and help and give suggestions about the team's work process and projects.
+						One of the projects I worked on was a new CMS for the company, allowing to fastly create the backend for new projects.
+					</p>
+					<h4>Full Stack Software Engineer - BF2 Tecnologia | Dec 2012 - Dec 2013 (1 year, 1 months)</h4>
+					<p>I started by doing some front pages using jQuery and pure <b>HTML/CSS</b> and managed to be a full stack engineer after a few months. I worked with a team of 5 developers, mainly with <b>PHP</b> as backend language.</p>
+				</Modal>
+				<Modal
 					open={openMyProjectsModal}
 					title="My Projects"
 					onCloseClick={() => setOpenMyProjectsModal(false)}
@@ -213,17 +238,10 @@ export default function Home() {
 					<ProjectTags
 						techs={[
 							"Typescript",
-							"Clean Architecture",
-							"TDD",
-							"DDD",
-							"Event Driven Architecture",
 							"Finances",
-							"SOLID",
-							"API",
 							"React",
 							"Material UI | MUI",
 							"MySQL",
-							"MongoDB",
 						]}
 					/>
 					<ProjectLinks github="https://github.com/Nicopa/financial-asset-manager" />
