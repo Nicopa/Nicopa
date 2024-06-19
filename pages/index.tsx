@@ -178,9 +178,11 @@ export default function Home() {
 					<h3>Currently</h3>
 					<p>
 						Now, I&apos;m looking for the best projects and teams to work on.
-						Finance or gaming projects might be the specialties I&apos;m most
-						excited to get into, but I&apos;m always open to hearing about new
-						ideas.
+						I'm passionate about building scalable applications that aim at sustainability and innovation.
+					</p>
+					<h3>Stacks</h3>
+					<p>
+						In the backend, my main experience is with Node.js with Typescript, specially with NestJS framework, and I have experience with PHP and Codeigniter framework. In the frontend, I use React and/or Angular, and I have experience with Next.js. I also have experience with databases such as MySQL, Postgres and MongoDB.
 					</p>
 				</Modal>
 				<Modal
