@@ -31,12 +31,6 @@
 }
 @media all and (min-width: $laptops-min-width) {
 	.root {
-		.icon {
-			svg {
-				width: 80px;
-				height: 80px;
-			}
-		}
 		.label {
 			font-size: 1.6rem;
 		}

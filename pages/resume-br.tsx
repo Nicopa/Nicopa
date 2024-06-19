@@ -12,6 +12,10 @@ import {
 	SiMysql,
 	SiMongodb,
 	SiSass,
+	SiNestjs,
+	SiNodedotjs,
+	SiDocker,
+	SiPostgresql,
 } from "react-icons/si";
 import { AiOutlineLink } from "react-icons/ai";
 import ResumeLayout from "../components/resume/ResumeLayout";
@@ -22,9 +26,9 @@ export default function ResumeBR() {
 	return (
 		<ResumeLayout
 			head={{
-				title: "Nícolas Amarante | Software Developer | Currículo",
+				title: "Nícolas Amarante | Software Engineer | Currículo",
 				description:
-					"Olá! Eu sou desenvolvedor de software e este é o meu currículo completo.",
+					"Olá! Eu sou engenheiro de software remoto e este é o meu currículo completo.",
 			}}
 			personalInfo={{
 				fullname: "Nícolas Panazzolo do Amarante",
@@ -40,41 +44,32 @@ export default function ResumeBR() {
 		>
 			<ResumeSection>
 				<h2>Sobre</h2>
-				<p>Olá! Sou um desenvolvedor de software remoto. Meu objetivo é trabalhar com pessoas do mundo todo e melhorar minhas habilidades para agregar valor a projetos que visam inovação e sustentabilidade. Saber o impacto que meu trabalho tem na sociedade é crucial para mim.</p>
-				<p>Meu dia de trabalho típico envolve começar com um café da manhã simples enquanto acompanho as últimas atualizações da minha equipe e navego por algumas notícias diárias. Depois disso, priorizo ​​as tarefas do dia para garantir que posso lidar com as mais importantes durante meu pico de produtividade pela manhã.</p>
-				<p>Depois que a tarefa principal do dia é concluída, normalmente passo minhas tardes revisando o código da minha equipe e participando de reuniões por videochamada para acompanhar o roteiro da equipe.</p>
-				<p>Eu me considero um profissional autodidata (como qualquer desenvolvedor deve ser) e sempre disposto a aprender novas tecnologias.</p>
+				<p>Olá! Sou um engenheiro de software remoto com mais de 5 anos de experiência e tenho trabalhado construindo aplicações e recursos web de ponta a ponta. Sou apaixonado por criar aplicações escaláveis que visem sustentabilidade e inovação.</p>
+				<p>No backend, minha experiência principal é com Node.js com Typescript, especialmente com o framework NestJS, e eu tenho experiência com PHP e o framework Codeigniter. No frontend, eu uso React e/ou Angular, e tenho experiência com Next.js. Eu também tenho experiência com bancos de dados como MySQL, Postgres e MongoDB.</p>
+				<p>Eu também estou acostumado a trabalhar com rastreadores de tempo (como Toptal e Time Doctor) quando requerido e estou acostumado a trabalhar assíncronamente com equipes globais.</p>
 			</ResumeSection>
 			<ResumeSection>
 				<h2>Experiência</h2>
 				<div className={styles["experience-item"]}>
-					<div className={styles.title}>Backend software developer</div>
+					<div className={styles.title}>Backend Software Engineer</div>
 					<div className={styles.place}>Void.gg</div>
-					<div className={styles.period}>Dez 2022 - Presente</div>
+					<div className={styles.period}>Dez 2022 - Mai 2024</div>
 					<p className={styles.description}>
-						Eu me especializei em desenvolver e manter serviços de backend para aplicativos de rastreamento de jogos, com foco em estatísticas de jogadores do Valorant.
-						Utilizando tecnologias como NestJS (Node.js e Typescript), juntamente com a API da Riot, garanto alto desempenho e capacidade de resposta de nossos aplicativos.
-						Uma conquista importante foi refatorar com sucesso nossos aplicativos para dar suporte a diferentes infraestruturas por meio de migrações e redução de custos de banco de dados.
-						Trabalho em colaboração com uma equipe de desenvolvedores, fornecendo sugestões, testando suporte e revisões de aplicativos.
+						Eu me especializei em desenvolver e manter serviços de backend para APIs de estatísticas de jogos, especialmente para Valorant.
+						Utilizando tecnologias como NestJS (Node.js e Typescript), juntamente com a API da Riot, garanti alto desempenho e capacidade de resposta para as APIs.
+						Uma conquista importante foi refatorar com sucesso nossas aplicações para dar suporte a diferentes infraestruturas por meio de migrações e redução de custos de banco de dados.
+						Trabalhei em colaboração com uma equipe de desenvolvedores remotos, fornecendo sugestões, testando suporte e revisões de aplicativos.
 					</p>
 				</div>
 				<div className={styles["experience-item"]}>
-					<div className={styles.title}>Software developer</div>
-					<div className={styles.place}>Freelancer</div>
+					<div className={styles.title}>Full Stack Software Engineer</div>
+					<div className={styles.place}>Coopertec Soluções</div>
 					<div className={styles.period}>Jan 2022 - Nov 2022</div>
 					<p className={styles.description}>
-						Eu tenho dividido o meu tempo entre estudar novas tecnologias e
-						fazer algumas requisições de freelances para empresas locais. Nos
-						últimos meses, tenho conseguido programar e dar manutenção para
-						diferentes tipos de aplicações, desde sistemas legados web em PHP,{" "}
-						<b>CodeIgniter</b>, até o desenvolvimento de aplicações/páginas em{" "}
-						<b>Angular</b> e <b>Next.js/React</b> em <b>Typescript</b>.
-						<br />
-						Eu também estou estudando o desenvolvimento de jogos, que é uma
-						oportunidade pela qual eu também me interesso.
+						Consegui programar e dar suporte para diferentes tipos de aplicações web. Eu desenvolvi e consertei recursos para um cliente da área logística que requeriu usar <b>PHP (versão 4)</b> legado e CodeIgniter. Eu também trabalhei usando <b>Angular</b> e <b>Next.js/React (Typescript)</b> no frontend para projectos de outros clientes.
 					</p>
 				</div>
-				<div className={styles["experience-item"]}>
+				{/* <div className={styles["experience-item"]}>
 					<div className={styles.title}>Transição de carreira</div>
 					<div className={styles.period}>
 						Abr 2016 - Out 2021 (5 anos, 7 meses)
@@ -90,9 +85,9 @@ export default function ResumeBR() {
 						P.S: Em março de 2017, eu fui para Tokyo, no Japão, para fazer um
 						curso de sushi. Todas as aulas foram lecionadas em inglês.
 					</p>
-				</div>
+				</div> */}
 				<div className={styles["experience-item"]}>
-					<div className={styles.title}>Full Stack Developer</div>
+					<div className={styles.title}>Full Stack Software Engineer</div>
 					<div className={styles.place}>
 						Agência Orin - Flores da Cunha, RS, Brasil
 					</div>
@@ -100,15 +95,13 @@ export default function ResumeBR() {
 						Jun 2014 - Mar 2016 (1 ano, 10 meses)
 					</div>
 					<p className={styles.description}>
-						Eu fui responsável pelo backend (<b>PHP</b>) e frontend de
-						aplicações web. A empresa era pequena (5 colaboradores) então eu
-						pude aprender um pouco de tudo que está envolvido no desenvolvimento
-						de um projeto (design, SEO, brainstorms, etc) e também ajudar e dar
-						sugestões sobre o processo de trabalho da equipe.
+						Fui líder de backend a frontend. Eu era responsável pela construção de páginas web usando <b>PHP</b> e jQuery.
+						Trabalhar com uma pequena equipe me permitiu aprender um pouco de tudo que está envolvido no desenvolvimento de um projeto (design, SEO, brainstorms, etc) e também ajudar e dar sugestões sobre o processo de trabalho da equipe.
+						Um dos projetos em que trabalhei foi um sistema de gerenciamento de conteúdo <b>CMS</b> para a empresa, permitindo criar rapidamente o backend de novos projetos.
 					</p>
 				</div>
 				<div className={styles["experience-item"]}>
-					<div className={styles.title}>Full Stack Developer</div>
+					<div className={styles.title}>Full Stack Engineer</div>
 					<div className={styles.place}>
 						BF2 Tecnologia - Caxias do Sul, RS, Brasil
 					</div>
@@ -116,10 +109,7 @@ export default function ResumeBR() {
 						Dez 2012 - Dez 2013 (1 ano, 1 mês)
 					</div>
 					<p className={styles.description}>
-						Eu comecei fazendo algumas páginas frontend e consegui me tornar
-						full-stack depois de alguns meses. Eu trabalhei com uma equipe de 5
-						desenvolvedores. E também trabalhei principalmente com o <b>PHP</b>{" "}
-						no backend.
+						Eu comecei fazendo algumas páginas frontend jQuery e puro HTML/CSS e consegui me tornar full-stack depois de alguns meses. Eu trabalhei com uma equipe de 5 desenvolvedores, primariamente com <b>PHP</b> no backend.
 					</p>
 				</div>
 			</ResumeSection>
@@ -134,15 +124,19 @@ export default function ResumeBR() {
 						icon={<SiTypescript title="Typescript" />}
 						label="Typescript"
 					></SkillIcon>
-					<SkillIcon icon={<SiPython title="Python" />} label="Python" />
-					<SkillIcon icon={<SiPhp title="PHP" />} label="PHP" />
+					<SkillIcon icon={<SiNestjs title="Nest.js" />} label="Nest.js" />
+					<SkillIcon icon={<SiNodedotjs title="Node.js" />} label="Node.js" />
 					<SkillIcon icon={<SiNextdotjs title="Next.js" />} label="Next.js" />
 					<SkillIcon icon={<SiReact title="React" />} label="React" />
 					<SkillIcon icon={<SiAngular title="Angular" />} label="Angular" />
+					<SkillIcon icon={<SiDocker title="Docker" />} label="Docker" />
+					<SkillIcon icon={<SiPython title="Python" />} label="Python" />
+					<SkillIcon icon={<SiPhp title="PHP" />} label="PHP" />
 					<SkillIcon
 						icon={<SiCodeigniter title="Codeigniter" />}
 						label="Codeigniter"
 					/>
+					<SkillIcon icon={<SiPostgresql title="Postgres" />} label="Postgres" />
 					<SkillIcon icon={<SiMysql title="MySQL" />} label="MySQL" />
 					<SkillIcon icon={<SiMongodb title="MongoDB" />} label="MongoDB" />
 					<SkillIcon icon={<SiSass title="SCSS/Sass" />} label="SCSS/Sass" />
@@ -234,10 +228,7 @@ export default function ResumeBR() {
 				<h2>Idiomas</h2>
 				<ul className={styles["item-list"]}>
 					<li>Português(BR) - Nativo</li>
-					<li>
-						English - Advanced: I can talk, read and write. I just need a daily
-						habit of talking to people to get fluent.
-					</li>
+					<li>Inglês - Fluente</li>
 				</ul>
 			</ResumeSection>
 		</ResumeLayout>
