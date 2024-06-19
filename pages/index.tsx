@@ -265,7 +265,8 @@ export default function Home() {
 						the first pokemon generation.
 					</p>
 					<ProjectTags techs={["Typescript", "Angular"]} />
-					<ProjectLinks github="https://github.com/Nicopa/pokemon-memory-game" />
+					<ProjectLinks app="/pokemon" />
+					{/* <ProjectLinks github="https://github.com/Nicopa/pokemon-memory-game" /> */}
 				</Modal>
 				<Modal
 					open={openSkillsModal}
