@@ -16,7 +16,7 @@ function Clock() {
 export default function TopBar() {
 	return (
 		<div className={styles.root}>
-			<span className={styles.name}>Nícolas Amarante - Software Developer</span>
+			<span className={styles.name}>Nícolas Amarante - Software Engineer</span>
 			<Clock />
 		</div>
 	);

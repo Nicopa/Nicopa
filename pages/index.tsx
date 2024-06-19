@@ -32,6 +32,9 @@ import {
 	SiSass,
 	SiLinkedin,
 	SiGithub,
+	SiNestjs,
+	SiNodedotjs,
+	SiDocker,
 } from "react-icons/si";
 import styles from "./index.module.scss";
 import Dialog from "../components/dialog/Dialog";
@@ -46,10 +49,10 @@ export default function Home() {
 	return (
 		<Desktop>
 			<Head>
-				<title>Nícolas Amarante | Software Developer | Homepage</title>
+				<title>Nícolas Amarante | Software Engineer | Homepage</title>
 				<meta
 					name="description"
-					content="Hi! I'm a software developer and here you can find some of my projects, informations and contacts."
+					content="Hi! I'm a software engineer and here you can find some of my projects, informations and contacts."
 				/>
 				<meta
 					name="viewport"
@@ -270,16 +273,19 @@ export default function Home() {
 					onCloseClick={() => setOpenSkillsModal(false)}
 				>
 					<SkillStack>
-						<SkillIcon icon={<SiTypescript />} label="Typescript"></SkillIcon>
-						<SkillIcon icon={<SiPython />} label="Python" />
-						<SkillIcon icon={<SiPhp />} label="PHP" />
-						<SkillIcon icon={<SiNextdotjs />} label="Next.js" />
-						<SkillIcon icon={<SiReact />} label="React" />
-						<SkillIcon icon={<SiAngular />} label="Angular" />
-						<SkillIcon icon={<SiCodeigniter />} label="Codeigniter" />
-						<SkillIcon icon={<SiMysql />} label="MySQL" />
-						<SkillIcon icon={<SiMongodb />} label="MongoDB" />
-						<SkillIcon icon={<SiSass />} label="SCSS/Sass" />
+						<SkillIcon icon={<SiTypescript title="Typescript" />} label="Typescript"></SkillIcon>
+						<SkillIcon icon={<SiNestjs title="Nest.js" />} label="Nest.js" />
+						<SkillIcon icon={<SiNodedotjs title="Node.js" />} label="Node.js" />
+						<SkillIcon icon={<SiNextdotjs title="Next.js" />} label="Next.js" />
+						<SkillIcon icon={<SiReact title="React" />} label="React" />
+						<SkillIcon icon={<SiAngular title="Angular" />} label="Angular" />
+						<SkillIcon icon={<SiDocker title="Docker" />} label="Docker" />
+						<SkillIcon icon={<SiPython title="Python" />} label="Python" />
+						<SkillIcon icon={<SiPhp title="PHP" />} label="PHP" />
+						<SkillIcon icon={<SiCodeigniter title="Codeigniter" />} label="Codeigniter" />
+						<SkillIcon icon={<SiMysql title="MySQL" />} label="MySQL" />
+						<SkillIcon icon={<SiMongodb title="MongoDB" />} label="MongoDB" />
+						<SkillIcon icon={<SiSass title="SCSS/Sass" />} label="SCSS/Sass" />
 					</SkillStack>
 				</Modal>
 				<Modal
