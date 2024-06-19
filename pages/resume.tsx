@@ -209,8 +209,8 @@ export default function Resume() {
 							Pokemon Memory Game in Angular
 							<span className={styles.link}>
 								<AiOutlineLink />
-								<a href="https://nicopa.github.io/Nicopa/">
-									nicopa.github.io/Nicopa/
+								<a href="https://nicopa.github.io/Nicopa/pokemon">
+									nicopa.github.io/Nicopa/pokemon
 								</a>
 							</span>
 						</div>
