@@ -35,6 +35,7 @@ import {
 	SiNestjs,
 	SiNodedotjs,
 	SiDocker,
+	SiOpenai,
 } from "react-icons/si";
 import styles from "./index.module.scss";
 import Dialog from "../components/dialog/Dialog";
@@ -205,8 +206,10 @@ export default function Home() {
 					onCloseClick={() => setOpenExperienceModal(false)}
 				>
 					<h3>Experience</h3>
+					<h4>Full Stack Software Engineer - ElectroNeek | Jul 2024 - Present</h4>
+					<p>I maintain and develop new features for the company platform, both on the frontend and backend. Utilizing technologies such as <b>NestJS</b>, <b>Typescript</b>, <b>NodeJS</b>, <b>Angular</b>, <b>OpenAI</b>, <b>Google OCR</b>, <b>Docker</b>, <b>Kafka</b>, <b>MongoDB</b>, <b>Redis</b>, and <b>Electron</b>, I ensure the platform's robustness and scalability. A significant achievement was the complete refactor of a document recognition tool that converts PDFs and images to JSON with high accuracy, leveraging prompt engineering and tool binding. I collaborate on code reviews, bug troubleshooting, best practices discussions, and brainstorms. The company focuses on Robotic Process Automation, guided by Kanban methodology, with AI features and tools being the core business.</p>
 					<h4>Backend Software Engineer - Void.gg | Dec 2022 - May 2024</h4>
-					<p>I specialized in developing and maintaining backend services for game statistics tracker APIs, specially for Valorant. Utilizing technologies such as <b>NestJS (Node.js and Typescript)</b>, alongside the Riot API, I ensured high performance and responsiveness for the APIs. A key achievement was successfully refactoring our applications in order to support different infrastructures through required migrations and reducing database costs. Other stacks used were <b>Docker</b>, <b>Kafka</b> (microservices), <b>Redis</b>, <b>BullMQ</b>, <b>AWS</b> and <b>Python</b> for small scripts. I worked collaboratively within a team of remote developers, providing suggestions, testing support and application reviews.</p>
+					<p>I specialized in developing and maintaining backend services for game statistics tracker APIs, mainly focused on Valorant. Utilizing technologies such as <b>NestJS (Node.js and Typescript)</b>, alongside the Riot API, I ensured high performance and responsiveness for the APIs. A key achievement was successfully refactoring the company backend applications in order to support different infrastructures through required migrations and reducing database costs. Other stacks used were <b>Docker</b>, <b>Kafka</b> (microservices), <b>Redis</b>, <b>BullMQ</b>, <b>AWS</b> and <b>Python</b> for small scripts. I worked collaboratively within a team of remote developers, providing suggestions, testing support and application reviews.</p>
 					<h4>Full Stack Software Engineer - Coopertec Soluções | Jan 2022 - Nov 2022 (11 months)</h4>
 					<p>I managed to code and maintain very different web applications. I developed and fixed features for a logistics client that required using <b>legacy PHP (version 4)</b> and <b>CodeIgniter</b>. I also worked using <b>Angular</b> and <b>Next.js/React (Typescript)</b> in frontend projects for other clients.</p>
 					<h4>Full Stack Software Engineer - Agência Orin | Jun 2014 - Mar 2016 (1 year, 10 months)</h4>
@@ -310,6 +313,8 @@ export default function Home() {
 						<SkillIcon icon={<SiMysql title="MySQL" />} label="MySQL" />
 						<SkillIcon icon={<SiMongodb title="MongoDB" />} label="MongoDB" />
 						<SkillIcon icon={<SiSass title="SCSS/Sass" />} label="SCSS/Sass" />
+						<SkillIcon icon={<SiOpenai title="OpenAI" />} label="OpenAI" />
+						<SkillIcon icon={<SiGithub title="Github" />} label="Github" />
 					</SkillStack>
 				</Modal>
 				<Modal

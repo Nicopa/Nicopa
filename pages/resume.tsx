@@ -16,6 +16,8 @@ import {
 	SiNestjs,
 	SiPostgresql,
 	SiDocker,
+	SiOpenai,
+	SiGithub
 } from "react-icons/si";
 import { AiOutlineLink } from "react-icons/ai";
 import ResumeLayout from "../components/resume/ResumeLayout";
@@ -32,7 +34,7 @@ export default function Resume() {
 			}}
 			personalInfo={{
 				fullname: "Nicholas Panazzolo Amarante",
-				age: "33 years old",
+				age: "34 years old",
 				email: "nicopa_rs@hotmail.com",
 				linkedinURL: "https://www.linkedin.com/in/nicopa/",
 				linkedinShort: "linkedin.com/in/nicopa/",
@@ -51,13 +53,24 @@ export default function Resume() {
 			<ResumeSection>
 				<h2>Experience</h2>
 				<div className={styles["experience-item"]}>
+					<div className={styles.title}>Full Stack Software Engineer</div>
+					<div className={styles.place}>ElectroNeek</div>
+					<div className={styles.period}>Jul 2024 - Present</div>
+					<p className={styles.description}>
+						I maintain and develop new features for the company platform, both on the frontend and backend.
+						Utilizing technologies such as <b>NestJS</b>, <b>Typescript</b>, <b>NodeJS</b>, <b>Angular</b>, <b>OpenAI</b>, <b>Google OCR</b>, <b>Docker</b>, <b>Kafka</b>, <b>MongoDB</b>, <b>Redis</b>, and <b>Electron</b>, I ensure the platform's robustness and scalability.
+						A significant achievement was the complete refactor of a document recognition tool that converts PDFs and images to JSON with high accuracy, leveraging prompt engineering and tool binding.
+						I collaborate on code reviews, bug troubleshooting, best practices discussions, and brainstorms. The company focuses on Robotic Process Automation, guided by Kanban methodology, with AI features and tools being the core business.
+					</p>
+				</div>
+				<div className={styles["experience-item"]}>
 					<div className={styles.title}>Backend Software Engineer</div>
 					<div className={styles.place}>Void.gg</div>
 					<div className={styles.period}>Dec 2022 - May 2024</div>
 					<p className={styles.description}>
-						I specialized in developing and maintaining backend services for game statistics tracker APIs, specially for Valorant.
+						I specialized in developing and maintaining backend services for game statistics tracker APIs, mainly focused on Valorant.
 						Utilizing technologies such as <b>NestJS (Node.js and Typescript)</b>, alongside the Riot API, I ensured high performance and responsiveness for the APIs.
-						A key achievement was successfully refactoring our applications in order to support different infrastructures through required migrations and reducing database costs.
+						A key achievement was successfully refactoring the company backend applications in order to support different infrastructures through required migrations and reducing database costs.
 						Other stacks used were <b>Docker</b>, <b>Kafka</b> (microservices), <b>Redis</b>, <b>BullMQ</b>, <b>AWS</b> and <b>Python</b> for small scripts.
 						I worked collaboratively within a team of remote developers, providing suggestions, testing support and application reviews.
 					</p>
@@ -70,23 +83,6 @@ export default function Resume() {
 						I managed to code and maintain very different web applications. I developed and fixed features for a logistics client that required using <b>legacy PHP (version 4)</b> and <b>CodeIgniter</b>. I also worked using <b>Angular</b> and <b>Next.js/React (Typescript)</b> in frontend projects for other clients.
 					</p>
 				</div>
-				{/* <div className={styles["experience-item"]}>
-					<div className={styles.title}>Career transition</div>
-					<div className={styles.period}>
-						Apr 2016 - Oct 2021 (5 years, 7 months)
-					</div>
-					<p className={styles.description}>
-						I made a career transition because I learned to make sushi and there
-						were no restaurants in my town. So I decided to start from the
-						scratch, and I managed to open my own restaurant and work in it for
-						3 years (even during the pandemic). <br />I decided to leave because
-						the financial return of this type of business in my region was not
-						worth it.
-						<br />
-						P.S: In March, 2017, I went to Tokyo, Japan, to do a sushi course.
-						Every class was given in English.
-					</p>
-				</div> */}
 				<div className={styles["experience-item"]}>
 					<div className={styles.title}>Full Stack Software Engineer</div>
 					<div className={styles.place}>
@@ -141,6 +137,8 @@ export default function Resume() {
 					<SkillIcon icon={<SiMysql title="MySQL" />} label="MySQL" />
 					<SkillIcon icon={<SiMongodb title="MongoDB" />} label="MongoDB" />
 					<SkillIcon icon={<SiSass title="SCSS/Sass" />} label="SCSS/Sass" />
+					<SkillIcon icon={<SiOpenai title="OpenAI" />} label="OpenAI" />
+					<SkillIcon icon={<SiGithub title="Github" />} label="Github" />
 				</SkillStack>
 			</ResumeSection>
 			<ResumeSection className={styles.projects}>
@@ -221,6 +219,22 @@ export default function Resume() {
 						</p>
 						<div className={styles.techs}>Typescript, Angular</div>
 					</div>
+				</div>
+			</ResumeSection>
+			<ResumeSection>
+				<h2>Licenses & certifications</h2>
+				<div className={styles["certification-item"]}>
+					<div className={styles.name}>CS50X: CS50's Introduction to Computer Science</div>
+					<div className={styles.place}>CS50 - edX</div>
+					<div className={styles.period}>Jan 2025</div>
+					<div className={styles["credential-id"]}>Credential ID: bbe08eb36b1c4912b0889a1c0b32962c</div>
+					<div className={styles["credential-url"]}>https://courses.edx.org/certificates/bbe08eb36b1c4912b0889a1c0b32962c</div>
+				</div>
+				<div className={styles["certification-item"]}>
+					<div className={styles.name}>Clean Code and Clean Architecture</div>
+					<div className={styles.place}>Branas.io</div>
+					<div className={styles.period}>Apr 2023</div>
+					<div className={styles["credential-url"]}>https://ll-app-certificates.s3.sa-east-1.amazonaws.com/92f9c153-7bd9-4357-8492-5406337c68cf.png</div>
 				</div>
 			</ResumeSection>
 			<ResumeSection>

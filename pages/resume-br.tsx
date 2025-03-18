@@ -16,6 +16,8 @@ import {
 	SiNodedotjs,
 	SiDocker,
 	SiPostgresql,
+	SiOpenai,
+	SiGithub,
 } from "react-icons/si";
 import { AiOutlineLink } from "react-icons/ai";
 import ResumeLayout from "../components/resume/ResumeLayout";
@@ -32,7 +34,7 @@ export default function ResumeBR() {
 			}}
 			personalInfo={{
 				fullname: "Nícolas Panazzolo do Amarante",
-				age: "33 anos",
+				age: "34 anos",
 				email: "nicopa_rs@hotmail.com",
 				linkedinURL: "https://www.linkedin.com/in/nicopa/",
 				linkedinShort: "linkedin.com/in/nicopa/",
@@ -51,13 +53,24 @@ export default function ResumeBR() {
 			<ResumeSection>
 				<h2>Experiência</h2>
 				<div className={styles["experience-item"]}>
+					<div className={styles.title}>Full Stack Software Engineer</div>
+					<div className={styles.place}>ElectroNeek</div>
+					<div className={styles.period}>Jul 2024 - Present</div>
+					<p className={styles.description}>
+						Eu mantenho e desenvolvo novos recursos para a plataforma da empresa, tanto no frontend quanto no backend.
+						Utilizando tecnologias como <b>NestJS</b>, <b>Typescript</b>, <b>NodeJS</b>, <b>Angular</b>, <b>OpenAI</b>, <b>Google OCR</b>, <b>Docker</b>, <b>Kafka</b>, <b>MongoDB</b>, <b>Redis</b> e <b>Electron</b>, eu garanto a robustez e escalabilidade da plataforma.
+						Uma conquista significativa foi a refatoração completa de uma ferramenta de reconhecimento de documentos que converte PDFs e imagens em JSON com alta precisão, utilizando prompt engineering e tool binding.
+						Eu colaboro com revisões de código, solução de problemas de bugs, discussões de melhores práticas e brainstorms. A empresa se concentra na automação de processos robóticos, guiada pela metodologia Kanban, com recursos e ferramentas de IA como negócio principal.
+					</p>
+				</div>
+				<div className={styles["experience-item"]}>
 					<div className={styles.title}>Backend Software Engineer</div>
 					<div className={styles.place}>Void.gg</div>
 					<div className={styles.period}>Dez 2022 - Mai 2024</div>
 					<p className={styles.description}>
-						Eu me especializei em desenvolver e manter serviços de backend para APIs de estatísticas de jogos, especialmente para Valorant.
+						Eu me especializei em desenvolver e manter serviços de backend para APIs de estatísticas de jogos, como foco principal no Valorant.
 						Utilizando tecnologias como <b>NestJS (Node.js e Typescript)</b>, juntamente com a API da Riot, garanti alto desempenho e capacidade de resposta para as APIs.
-						Uma conquista importante foi refatorar com sucesso nossas aplicações para dar suporte a diferentes infraestruturas por meio de migrações e redução de custos de banco de dados.
+						Uma conquista importante foi refatorar com sucesso as aplicações backend da empresa para dar suporte a diferentes infraestruturas por meio de migrações e redução de custos de banco de dados.
 						Trabalhei em colaboração com uma equipe de desenvolvedores remotos, fornecendo sugestões, testando suporte e revisões de aplicativos.
 					</p>
 				</div>
@@ -69,23 +82,6 @@ export default function ResumeBR() {
 						Consegui programar e dar suporte para diferentes tipos de aplicações web. Eu desenvolvi e consertei recursos para um cliente da área logística que requeriu usar <b>PHP (versão 4)</b> legado e CodeIgniter. Eu também trabalhei usando <b>Angular</b> e <b>Next.js/React (Typescript)</b> no frontend para projectos de outros clientes.
 					</p>
 				</div>
-				{/* <div className={styles["experience-item"]}>
-					<div className={styles.title}>Transição de carreira</div>
-					<div className={styles.period}>
-						Abr 2016 - Out 2021 (5 anos, 7 meses)
-					</div>
-					<p className={styles.description}>
-						Fiz uma transição de carreira porque eu aprendi a fazer sushi e não
-						haviam restaurantes em minha cidade. Então eu decidi começar do
-						zero, e consegui abrir o meu próprio restaurante e trabalhar nele
-						por 3 anos (mesmo durante a pandemia). Eu decidi parar porque o
-						retorno financeiro deste tipo de negócio na minha região não estava
-						valendo a pena.
-						<br />
-						P.S: Em março de 2017, eu fui para Tokyo, no Japão, para fazer um
-						curso de sushi. Todas as aulas foram lecionadas em inglês.
-					</p>
-				</div> */}
 				<div className={styles["experience-item"]}>
 					<div className={styles.title}>Full Stack Software Engineer</div>
 					<div className={styles.place}>
@@ -140,6 +136,8 @@ export default function ResumeBR() {
 					<SkillIcon icon={<SiMysql title="MySQL" />} label="MySQL" />
 					<SkillIcon icon={<SiMongodb title="MongoDB" />} label="MongoDB" />
 					<SkillIcon icon={<SiSass title="SCSS/Sass" />} label="SCSS/Sass" />
+					<SkillIcon icon={<SiOpenai title="OpenAI" />} label="OpenAI" />
+					<SkillIcon icon={<SiGithub title="Github" />} label="Github" />
 				</SkillStack>
 			</ResumeSection>
 			<ResumeSection className={styles.projects}>
@@ -222,6 +220,22 @@ export default function ResumeBR() {
 						</p>
 						<div className={styles.techs}>Typescript, Angular</div>
 					</div>
+				</div>
+			</ResumeSection>
+			<ResumeSection>
+				<h2>Licenças e Certificações</h2>
+				<div className={styles["certification-item"]}>
+					<div className={styles.name}>CS50X: CS50's Introduction to Computer Science</div>
+					<div className={styles.place}>CS50 - edX</div>
+					<div className={styles.period}>Jan 2025</div>
+					<div className={styles["credential-id"]}>Credential ID: bbe08eb36b1c4912b0889a1c0b32962c</div>
+					<div className={styles["credential-url"]}>https://courses.edx.org/certificates/bbe08eb36b1c4912b0889a1c0b32962c</div>
+				</div>
+				<div className={styles["certification-item"]}>
+					<div className={styles.name}>Clean Code and Clean Architecture</div>
+					<div className={styles.place}>Branas.io</div>
+					<div className={styles.period}>Abr 2023</div>
+					<div className={styles["credential-url"]}>https://ll-app-certificates.s3.sa-east-1.amazonaws.com/92f9c153-7bd9-4357-8492-5406337c68cf.png</div>
 				</div>
 			</ResumeSection>
 			<ResumeSection>

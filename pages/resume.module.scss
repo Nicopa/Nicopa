@@ -61,6 +61,22 @@
 		height: 40px !important;
 	}
 }
+.certification-item {
+	margin-bottom: 18px;
+	.name {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 4px;
+	}
+	.place,
+	.period,
+	.credential-id,
+	.credential-url {
+		margin-bottom: 4px;
+		line-height: 16px;
+	}
+}
 
 @media all and (min-width: $tablets-min-width) {
 	.projects {
