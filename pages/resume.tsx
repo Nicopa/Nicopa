@@ -46,9 +46,9 @@ export default function Resume() {
 		>
 			<ResumeSection>
 				<h2>Summary</h2>
-				<p>I'm a remote full stack software engineer with over 5 years of experience and I've been working building end-to-end web applications and features. I'm passionate about building scalable applications that aim at sustainability and innovation.</p>
-				<p>In the backend, my main experience is with Node.js with Typescript, specially with NestJS framework, and I have experience with PHP and Codeigniter framework. In the frontend, I use React and/or Angular, and I have experience with Next.js. I also have experience with databases such as MySQL, Postgres and MongoDB.</p>
-				<p>I'm also used to work using time trackers (like Toptal and Time Doctor) when required and I'm used to work asynchronously with global teams.</p>
+				<p>I'm a remote full-stack software engineer with over six years of experience building end-to-end web applications. Passionate about scalable and innovative solutions, I specialize in backend development with <b>Node.js (TypeScript)</b>, particularly using the <b>NestJS framework</b>, and have experience with <b>PHP (CodeIgniter)</b> and <b>Python (Django)</b>.</p>
+				<p>On the frontend, I work with <b>React</b>, <b>Angular</b>, and <b>Next.js</b>, delivering dynamic and efficient user experiences. My database expertise includes <b>MySQL</b>, <b>PostgreSQL</b>, and <b>MongoDB</b>.</p>
+				<p>I'm comfortable working asynchronously in global teams and have experience with time-tracking tools like <b>Toptal</b> and <b>Time Doctor</b> when required.</p>
 			</ResumeSection>
 			<ResumeSection>
 				<h2>Experience</h2>

@@ -46,9 +46,9 @@ export default function ResumeBR() {
 		>
 			<ResumeSection>
 				<h2>Sobre</h2>
-				<p>Olá! Sou um engenheiro de software remoto com mais de 5 anos de experiência e tenho trabalhado construindo aplicações e recursos web de ponta a ponta. Sou apaixonado por criar aplicações escaláveis que visem sustentabilidade e inovação.</p>
-				<p>No backend, minha experiência principal é com Node.js com Typescript, especialmente com o framework NestJS, e eu tenho experiência com PHP e o framework Codeigniter. No frontend, eu uso React e/ou Angular, e tenho experiência com Next.js. Eu também tenho experiência com bancos de dados como MySQL, Postgres e MongoDB.</p>
-				<p>Eu também estou acostumado a trabalhar com rastreadores de tempo (como Toptal e Time Doctor) quando requerido e estou acostumado a trabalhar assíncronamente com equipes globais.</p>
+				<p>Sou um engenheiro de software full-stack remoto com mais de seis anos de experiência na criação de aplicativos web de ponta a ponta. Apaixonado por soluções escaláveis ​e inovadoras, sou especialista em desenvolvimento de backend com <b>Node.js (TypeScript)</b>, particularmente usando o <b>framework NestJS</b>, e tenho experiência com <b>PHP (CodeIgniter)</b> e <b>Python (Django)</b>.</p>
+				<p>No frontend, trabalho com <b>React</b>, <b>Angular</b> e <b>Next.js</b>, proporcionando experiências de usuário dinâmicas e eficientes. Minha experiência em banco de dados inclui <b>MySQL</b>, <b>PostgreSQL</b> e <b>MongoDB</b>.</p>
+				<p>Sinto-me confortável trabalhando de forma assíncrona com equipes globais e tenho experiência com ferramentas de controle de tempo como <b>Toptal</b> e <b>Time Doctor</b> se necessário.</p>
 			</ResumeSection>
 			<ResumeSection>
 				<h2>Experiência</h2>
