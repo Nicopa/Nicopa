@@ -5,8 +5,9 @@ import styles from "./ProjectLinks.module.scss";
 type ProjectLinksProps = {
 	github?: string;
 	app?: string;
+	link?: string;
 };
-export default function ProjectLinks({ github, app }: ProjectLinksProps) {
+export default function ProjectLinks({ github, app, link }: ProjectLinksProps) {
 	return (
 		<div className={styles.root}>
 			{github && (
@@ -17,6 +18,15 @@ export default function ProjectLinks({ github, app }: ProjectLinksProps) {
 					title="GitHub project repository"
 				>
 					<BsGithub size={24} />
+				</a>
+			)}
+			{link && (
+				<a
+					href={link}
+					target="_blank"
+					rel="noreferrer"
+				>
+					<MdOutlineOpenInNew size={24} />
 				</a>
 			)}
 			{app && (
