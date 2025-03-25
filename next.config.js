@@ -10,5 +10,6 @@ const nextConfig = {
 			  }
 			: undefined,
 	assetPrefix: process.env.ASSET_PREFIX || undefined,
+	output: 'export'
 };
 module.exports = nextConfig;
