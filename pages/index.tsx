@@ -10,12 +10,13 @@ import project1ThumbnailSrc from "../public/project1_thumbnail.jpg";
 import project2ThumbnailSrc from "../public/project2_thumbnail.jpg";
 import project3ThumbnailSrc from "../public/project3_thumbnail.jpg";
 import project4ThumbnailSrc from "../public/project4_thumbnail.jpg";
+import project5ThumbnailSrc from "../public/project5_thumbnail.jpg";
 import ProjectTags from "../components/project/tags/ProjectTags";
 import ProjectLinks from "../components/project/links/ProjectLinks";
 import SkillStack from "../components/skill/SkillStack";
 import SkillIcon from "../components/skill/SkillIcon";
 import { BiMailSend } from "react-icons/bi";
-import { BsPersonFill, BsFillBookmarksFill /* BsAwardFill */ } from "react-icons/bs";
+import { BsPersonFill, BsFillBookmarksFill } from "react-icons/bs";
 import { AiOutlineAppstore } from "react-icons/ai";
 import { GiSkills } from "react-icons/gi";
 import { IoDocumentText } from "react-icons/io5";
@@ -226,7 +227,30 @@ export default function Home() {
 					title="My Projects"
 					onCloseClick={() => setOpenMyProjectsModal(false)}
 				>
-					<h3>Featured Project: Asset Manager</h3>
+					<h3>Devlog</h3>
+					<Image
+						src={project5ThumbnailSrc}
+						alt="Devlog"
+						className={styles["project-img"]}
+					/>
+					<p>
+						A desktop application for logging development activities, built with Electron, Angular, and Angular Material.
+						Logging your progress in task or project tickets is essential, but sometimes you need to centralize your daily work progress in one place.
+						That&apos;s why DevLog is a simple logger that saves TXT files and can be used both in a local application (Windows) or on the browser.
+					</p>
+					<ProjectTags
+						techs={[
+							"Typescript",
+							"Electron",
+							"Angular",
+							"Angular Material UI",
+							"Node.js",
+							"Desktop"
+						]}
+					/>
+					<ProjectLinks github="https://github.com/Nicopa/devlog" />
+					<hr />
+					<h3>Asset Manager</h3>
 					<Image
 						src={project1ThumbnailSrc}
 						alt="Asset Manager"
@@ -260,7 +284,7 @@ export default function Home() {
 						for the sports or games you like. And preferably without having to
 						register for any services. So, here is the Team Draft!
 					</p>
-					<ProjectTags techs={["Typescript", "React", "Material UI | MUI"]} />
+					<ProjectTags techs={["Typescript", "React", "Material UI | MUI", "Node.js"]} />
 					<ProjectLinks
 						github="https://github.com/Nicopa/team-draft-web"
 						app="https://team-draft.netlify.app/"
@@ -290,7 +314,7 @@ export default function Home() {
 						searching for equal cards, you have to find each evolution set of
 						the first pokemon generation.
 					</p>
-					<ProjectTags techs={["Typescript", "Angular"]} />
+					<ProjectTags techs={["Typescript", "Angular", "Node.js"]} />
 					<ProjectLinks app="/pokemon" />
 					{/* <ProjectLinks github="https://github.com/Nicopa/pokemon-memory-game" /> */}
 				</Modal>
