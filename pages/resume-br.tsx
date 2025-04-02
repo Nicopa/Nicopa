@@ -55,7 +55,7 @@ export default function ResumeBR() {
 				<div className={styles["experience-item"]}>
 					<div className={styles.title}>Full Stack Software Engineer</div>
 					<div className={styles.place}>ElectroNeek</div>
-					<div className={styles.period}>Jul 2024 - Present</div>
+					<div className={styles.period}>Jul 2024 - Mar 2025</div>
 					<p className={styles.description}>
 						Eu mantive e desenvolvi novos recursos para a plataforma da empresa, tanto no frontend quanto no backend.
 						Utilizando tecnologias como <b>NestJS</b>, <b>Typescript</b>, <b>NodeJS</b>, <b>Angular</b>, <b>OpenAI</b>, <b>Google OCR</b>, <b>Docker</b>, <b>Kafka</b>, <b>MongoDB</b>, <b>Redis</b> e <b>Electron</b>, eu garanti a robustez e escalabilidade da plataforma.
