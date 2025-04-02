@@ -57,10 +57,10 @@ export default function ResumeBR() {
 					<div className={styles.place}>ElectroNeek</div>
 					<div className={styles.period}>Jul 2024 - Present</div>
 					<p className={styles.description}>
-						Eu mantenho e desenvolvo novos recursos para a plataforma da empresa, tanto no frontend quanto no backend.
-						Utilizando tecnologias como <b>NestJS</b>, <b>Typescript</b>, <b>NodeJS</b>, <b>Angular</b>, <b>OpenAI</b>, <b>Google OCR</b>, <b>Docker</b>, <b>Kafka</b>, <b>MongoDB</b>, <b>Redis</b> e <b>Electron</b>, eu garanto a robustez e escalabilidade da plataforma.
+						Eu mantive e desenvolvi novos recursos para a plataforma da empresa, tanto no frontend quanto no backend.
+						Utilizando tecnologias como <b>NestJS</b>, <b>Typescript</b>, <b>NodeJS</b>, <b>Angular</b>, <b>OpenAI</b>, <b>Google OCR</b>, <b>Docker</b>, <b>Kafka</b>, <b>MongoDB</b>, <b>Redis</b> e <b>Electron</b>, eu garanti a robustez e escalabilidade da plataforma.
 						Uma conquista significativa foi a refatoração completa de uma ferramenta de reconhecimento de documentos que converte PDFs e imagens em JSON com alta precisão, utilizando prompt engineering e tool binding.
-						Eu colaboro com revisões de código, solução de problemas de bugs, discussões de melhores práticas e brainstorms. A empresa se concentra na automação de processos robóticos, guiada pela metodologia Kanban, com recursos e ferramentas de IA como negócio principal.
+						Eu colaborei com revisões de código, solução de problemas de bugs, discussões de melhores práticas e brainstorms. A empresa se concentra na automação de processos robóticos, guiada pela metodologia Kanban, com recursos e ferramentas de IA como negócio principal.
 					</p>
 				</div>
 				<div className={styles["experience-item"]}>
@@ -145,6 +145,44 @@ export default function ResumeBR() {
 				<div className={styles.stack}>
 					<div className={styles.project}>
 						<div className={styles.title}>
+							Django Document Recognition - versão Web
+							<span className={styles.link}>
+								<AiOutlineLink />
+								<a href="https://github.com/Nicopa/django-document-recognition">
+									nicopa.github.io/Nicopa/django-document-recognition
+								</a>
+							</span>
+						</div>
+						<p className={styles.description}>
+							Esta solução alimentada por IA foi projetada para agilizar o reconhecimento e o processamento de documentos.
+							Ela suporta vários formatos de imagem, incluindo PNG e JPEG, e oferece recursos robustos, como gerenciamento de campo personalizável e a capacidade de exportar e importar configurações de campo.
+							O aplicativo processa documentos e gera os dados extraídos em um formato JSON estruturado, garantindo fluxos de trabalho contínuos e fácil integração com outros sistemas, mesmo ao recarregar ou transferir dados entre sessões.
+						</p>
+						<div className={styles.techs}>
+							Python, OpenAI API, Django, Tailwind, Vanilla Javascript
+						</div>
+					</div>
+					<div className={styles.project}>
+						<div className={styles.title}>
+							DevLog - Desktop App e Web
+							<span className={styles.link}>
+								<AiOutlineLink />
+								<a href="https://nicopa.github.io/Nicopa/devlog">
+									nicopa.github.io/Nicopa/devlog
+								</a>
+							</span>
+						</div>
+						<p className={styles.description}>
+							Um aplicativo de desktop para registrar as atividades de trabalho, criado com Electron, Angular e Angular Material.
+							Registrar seu progresso em tickets de tarefas ou projetos é essencial, mas às vezes você precisa centralizar seu progresso diário de trabalho em um só lugar.
+							É por isso que o DevLog é um simples Logger que salva arquivos TXT e pode ser usado tanto em um aplicativo local (Windows) quanto no navegador.
+						</p>
+						<div className={styles.techs}>
+							Typescript, Electron, Angular, Angular Material UI, Node.js, Desktop
+						</div>
+					</div>
+					{/* <div className={styles.project}>
+						<div className={styles.title}>
 							Gerenciador Financeiro Pessoal de Ativos
 							<span className={styles.link}>
 								<AiOutlineLink />
@@ -166,10 +204,10 @@ export default function ResumeBR() {
 							Architecture, Finances, SOLID, API, React, Material UI MUI, MySQL,
 							MongoDB
 						</div>
-					</div>
+					</div> */}
 					<div className={styles.project}>
 						<div className={styles.title}>
-							Team Draft - Web App version
+							Team Draft - Versão Web
 							<span className={styles.link}>
 								<AiOutlineLink />
 								<a href="https://team-draft.netlify.app/">

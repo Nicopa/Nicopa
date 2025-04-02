@@ -6,11 +6,12 @@ import Shortcut from "../components/desktop/shortcut/Shortcut";
 import ShortcutStack from "../components/desktop/shortcut/ShortcutStack";
 import Modal from "../components/modal/Modal";
 import profilePicture from "../public/nicolas.webp";
-import project1ThumbnailSrc from "../public/project1_thumbnail.jpg";
+// import project1ThumbnailSrc from "../public/project1_thumbnail.jpg";
 import project2ThumbnailSrc from "../public/project2_thumbnail.jpg";
 import project3ThumbnailSrc from "../public/project3_thumbnail.jpg";
 import project4ThumbnailSrc from "../public/project4_thumbnail.jpg";
 import project5ThumbnailSrc from "../public/project5_thumbnail.jpg";
+import project6ThumbnailSrc from "../public/project6_thumbnail.webp";
 import ProjectTags from "../components/project/tags/ProjectTags";
 import ProjectLinks from "../components/project/links/ProjectLinks";
 import SkillStack from "../components/skill/SkillStack";
@@ -227,6 +228,28 @@ export default function Home() {
 					title="My Projects"
 					onCloseClick={() => setOpenMyProjectsModal(false)}
 				>
+					<h3>Django Document Recognition</h3>
+					<Image
+						src={project6ThumbnailSrc}
+						alt="Django Document Recognition"
+						className={styles["project-img"]}
+					/>
+					<p>
+						This AI-powered solution is designed to streamline the recognition and processing of documents.
+						It supports various image formats, including PNG and JPEG, and offers robust features such as customizable field management and the ability to export and import field configurations.
+						The application processes documents and outputs the extracted data in a structured JSON format, ensuring seamless workflows and easy integration with other systems, even when reloading or transferring data between sessions.
+					</p>
+					<ProjectTags
+						techs={[
+							"Python",
+							"OpenAI API",
+							"Django",
+							"Tailwind",
+							"Vanilla Javascript"
+						]}
+					/>
+					<ProjectLinks github="https://github.com/Nicopa/django-document-recognition" />
+					<hr />
 					<h3>Devlog</h3>
 					<Image
 						src={project5ThumbnailSrc}
@@ -250,7 +273,7 @@ export default function Home() {
 					/>
 					<ProjectLinks github="https://github.com/Nicopa/devlog" />
 					<hr />
-					<h3>Asset Manager</h3>
+					{/* <h3>Asset Manager</h3>
 					<Image
 						src={project1ThumbnailSrc}
 						alt="Asset Manager"
@@ -272,7 +295,7 @@ export default function Home() {
 						]}
 					/>
 					<ProjectLinks github="https://github.com/Nicopa/financial-asset-manager" />
-					<hr />
+					<hr /> */}
 					<h3>Team Draft | Web App</h3>
 					<Image
 						src={project2ThumbnailSrc}

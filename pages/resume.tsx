@@ -57,10 +57,10 @@ export default function Resume() {
 					<div className={styles.place}>ElectroNeek</div>
 					<div className={styles.period}>Jul 2024 - Present</div>
 					<p className={styles.description}>
-						I maintain and develop new features for the company platform, both on the frontend and backend.
-						Utilizing technologies such as <b>NestJS</b>, <b>Typescript</b>, <b>NodeJS</b>, <b>Angular</b>, <b>OpenAI</b>, <b>Google OCR</b>, <b>Docker</b>, <b>Kafka</b>, <b>MongoDB</b>, <b>Redis</b>, and <b>Electron</b>, I ensure the platform's robustness and scalability.
+						I maintained and developed new features for the company platform, both on the frontend and backend.
+						Utilizing technologies such as <b>NestJS</b>, <b>Typescript</b>, <b>NodeJS</b>, <b>Angular</b>, <b>OpenAI</b>, <b>Google OCR</b>, <b>Docker</b>, <b>Kafka</b>, <b>MongoDB</b>, <b>Redis</b>, and <b>Electron</b>, I ensured the platform's robustness and scalability.
 						A significant achievement was the complete refactor of a document recognition tool that converts PDFs and images to JSON with high accuracy, leveraging prompt engineering and tool binding.
-						I collaborate on code reviews, bug troubleshooting, best practices discussions, and brainstorms. The company focuses on Robotic Process Automation, guided by Kanban methodology, with AI features and tools being the core business.
+						I collaborated on code reviews, bug troubleshooting, best practices discussions, and brainstorms. The company focuses on Robotic Process Automation, guided by Kanban methodology, with AI features and tools being the core business.
 					</p>
 				</div>
 				<div className={styles["experience-item"]}>
@@ -146,6 +146,44 @@ export default function Resume() {
 				<div className={styles.stack}>
 					<div className={styles.project}>
 						<div className={styles.title}>
+							Django Document Recognition - Web App
+							<span className={styles.link}>
+								<AiOutlineLink />
+								<a href="https://github.com/Nicopa/django-document-recognition">
+									nicopa.github.io/Nicopa/django-document-recognition
+								</a>
+							</span>
+						</div>
+						<p className={styles.description}>
+							This AI-powered solution is designed to streamline the recognition and processing of documents.
+							It supports various image formats, including PNG and JPEG, and offers robust features such as customizable field management and the ability to export and import field configurations.
+							The application processes documents and outputs the extracted data in a structured JSON format, ensuring seamless workflows and easy integration with other systems, even when reloading or transferring data between sessions.
+						</p>
+						<div className={styles.techs}>
+							Python, OpenAI API, Django, Tailwind, Vanilla Javascript
+						</div>
+					</div>
+					<div className={styles.project}>
+						<div className={styles.title}>
+							DevLog - Desktop App and Web App
+							<span className={styles.link}>
+								<AiOutlineLink />
+								<a href="https://nicopa.github.io/Nicopa/devlog">
+									nicopa.github.io/Nicopa/devlog
+								</a>
+							</span>
+						</div>
+						<p className={styles.description}>
+							A desktop application for logging development activities, built with Electron, Angular, and Angular Material.
+							Logging your progress in task or project tickets is essential, but sometimes you need to centralize your daily work progress in one place.
+							That's why DevLog is a simple logger that saves TXT files and can be used both in a local application (Windows) or on the browser.
+						</p>
+						<div className={styles.techs}>
+							Typescript, Electron, Angular, Angular Material UI, Node.js, Desktop
+						</div>
+					</div>
+					{/* <div className={styles.project}>
+						<div className={styles.title}>
 							Financial Asset Manager
 							<span className={styles.link}>
 								<AiOutlineLink />
@@ -166,7 +204,7 @@ export default function Resume() {
 							Architecture, Finances, SOLID, API, React, Material UI MUI, MySQL,
 							MongoDB
 						</div>
-					</div>
+					</div> */}
 					<div className={styles.project}>
 						<div className={styles.title}>
 							Team Draft - Web App version
