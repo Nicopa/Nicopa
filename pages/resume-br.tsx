@@ -137,7 +137,7 @@ export default function ResumeBR() {
 					<SkillIcon icon={<SiMongodb title="MongoDB" />} label="MongoDB" />
 					<SkillIcon icon={<SiSass title="SCSS/Sass" />} label="SCSS/Sass" />
 					<SkillIcon icon={<SiOpenai title="OpenAI" />} label="OpenAI" />
-					<SkillIcon icon={<SiGithub title="Github" />} label="Github" />
+					{/* <SkillIcon icon={<SiGithub title="Github" />} label="Github" /> */}
 				</SkillStack>
 			</ResumeSection>
 			<ResumeSection className={styles.projects}>

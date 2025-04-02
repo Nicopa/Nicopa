@@ -138,7 +138,7 @@ export default function Resume() {
 					<SkillIcon icon={<SiMongodb title="MongoDB" />} label="MongoDB" />
 					<SkillIcon icon={<SiSass title="SCSS/Sass" />} label="SCSS/Sass" />
 					<SkillIcon icon={<SiOpenai title="OpenAI" />} label="OpenAI" />
-					<SkillIcon icon={<SiGithub title="Github" />} label="Github" />
+					{/* <SkillIcon icon={<SiGithub title="Github" />} label="Github" /> It's breaking the print layout */}
 				</SkillStack>
 			</ResumeSection>
 			<ResumeSection className={styles.projects}>
