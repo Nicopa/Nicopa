@@ -44,14 +44,19 @@ export default function Resume() {
 				profilePicture,
 			}}
 		>
-			<ResumeSection>
-				<h2>Summary</h2>
-				<p>I'm a remote full-stack software engineer with over six years of experience building end-to-end web applications. Passionate about scalable and innovative solutions, I specialize in backend development with <b>Node.js (TypeScript)</b>, particularly using the <b>NestJS framework</b>, and have experience with <b>PHP (CodeIgniter)</b> and <b>Python (Django)</b>.</p>
-				<p>On the frontend, I work with <b>React</b>, <b>Angular</b>, and <b>Next.js</b>, delivering dynamic and efficient user experiences. My database expertise includes <b>MySQL</b>, <b>PostgreSQL</b>, and <b>MongoDB</b>.</p>
-				<p>I'm comfortable working asynchronously in global teams and have experience with time-tracking tools like <b>Toptal</b> and <b>Time Doctor</b> when required.</p>
-			</ResumeSection>
+			
 			<ResumeSection>
 				<h2>Experience</h2>
+				<div className={styles["experience-item"]}>
+					<div className={styles.title}>Full Stack Software Engineer</div>
+					<div className={styles.place}>Turbo Tenant</div>
+					<div className={styles.period}>Apr 2025 - Present</div>
+					<p className={styles.description}>
+						TurboTenant is a pioneering tech company in the proptech space, recognized for its innovative digital platform that simplifies the rental process for property owners and tenants alike.
+						The company leverages a comprehensive suite of tools designed to streamline property marketing, management, and tenant screening—enabling a modern, efficient, and customer-centered approach to property management.
+						Known for its forward-thinking culture and commitment to continuous improvement, TurboTenant continues to transform the landscape of rental experiences in today's dynamic real estate market.
+					</p>
+				</div>
 				<div className={styles["experience-item"]}>
 					<div className={styles.title}>Full Stack Software Engineer</div>
 					<div className={styles.place}>ElectroNeek</div>
@@ -111,35 +116,10 @@ export default function Resume() {
 				</div>
 			</ResumeSection>
 			<ResumeSection>
-				<h2>Skills</h2>
-				<p>
-					These are some of the technologies that I managed to make at least one
-					application:
-				</p>
-				<SkillStack>
-					<SkillIcon
-						icon={<SiTypescript title="Typescript" />}
-						label="Typescript"
-					></SkillIcon>
-					<SkillIcon icon={<SiNestjs title="Nest.js" />} label="Nest.js" />
-					<SkillIcon icon={<SiNodedotjs title="Node.js" />} label="Node.js" />
-					<SkillIcon icon={<SiNextdotjs title="Next.js" />} label="Next.js" />
-					<SkillIcon icon={<SiReact title="React" />} label="React" />
-					<SkillIcon icon={<SiAngular title="Angular" />} label="Angular" />
-					<SkillIcon icon={<SiDocker title="Docker" />} label="Docker" />
-					<SkillIcon icon={<SiPython title="Python" />} label="Python" />
-					<SkillIcon icon={<SiPhp title="PHP" />} label="PHP" />
-					<SkillIcon
-						icon={<SiCodeigniter title="Codeigniter" />}
-						label="Codeigniter"
-					/>
-					<SkillIcon icon={<SiPostgresql title="Postgres" />} label="Postgres" />
-					<SkillIcon icon={<SiMysql title="MySQL" />} label="MySQL" />
-					<SkillIcon icon={<SiMongodb title="MongoDB" />} label="MongoDB" />
-					<SkillIcon icon={<SiSass title="SCSS/Sass" />} label="SCSS/Sass" />
-					<SkillIcon icon={<SiOpenai title="OpenAI" />} label="OpenAI" />
-					{/* <SkillIcon icon={<SiGithub title="Github" />} label="Github" /> It's breaking the print layout */}
-				</SkillStack>
+				<h2>Summary</h2>
+				<p>I'm a remote full-stack software engineer with over six years of experience building end-to-end web applications. Passionate about scalable and innovative solutions, I specialize in backend development with <b>Node.js (TypeScript)</b>, particularly using the <b>NestJS framework</b>, and have experience with <b>PHP (CodeIgniter)</b> and <b>Python (Django)</b>.</p>
+				<p>On the frontend, I work with <b>React</b>, <b>Angular</b>, and <b>Next.js</b>, delivering dynamic and efficient user experiences. My database expertise includes <b>MySQL</b>, <b>PostgreSQL</b>, and <b>MongoDB</b>.</p>
+				<p>I'm comfortable working asynchronously in global teams and have experience with time-tracking tools like <b>Toptal</b> and <b>Time Doctor</b> when required.</p>
 			</ResumeSection>
 			<ResumeSection className={styles.projects}>
 				<h2>Personal projects</h2>
@@ -258,6 +238,37 @@ export default function Resume() {
 						<div className={styles.techs}>Typescript, Angular</div>
 					</div>
 				</div>
+			</ResumeSection>
+			<ResumeSection>
+				<h2>Skills</h2>
+				<p>
+					These are some of the technologies that I managed to make at least one
+					application:
+				</p>
+				<SkillStack>
+					<SkillIcon
+						icon={<SiTypescript title="Typescript" />}
+						label="Typescript"
+					></SkillIcon>
+					<SkillIcon icon={<SiNestjs title="Nest.js" />} label="Nest.js" />
+					<SkillIcon icon={<SiNodedotjs title="Node.js" />} label="Node.js" />
+					<SkillIcon icon={<SiNextdotjs title="Next.js" />} label="Next.js" />
+					<SkillIcon icon={<SiReact title="React" />} label="React" />
+					<SkillIcon icon={<SiAngular title="Angular" />} label="Angular" />
+					<SkillIcon icon={<SiDocker title="Docker" />} label="Docker" />
+					<SkillIcon icon={<SiPython title="Python" />} label="Python" />
+					<SkillIcon icon={<SiPhp title="PHP" />} label="PHP" />
+					<SkillIcon
+						icon={<SiCodeigniter title="Codeigniter" />}
+						label="Codeigniter"
+					/>
+					<SkillIcon icon={<SiPostgresql title="Postgres" />} label="Postgres" />
+					<SkillIcon icon={<SiMysql title="MySQL" />} label="MySQL" />
+					<SkillIcon icon={<SiMongodb title="MongoDB" />} label="MongoDB" />
+					<SkillIcon icon={<SiSass title="SCSS/Sass" />} label="SCSS/Sass" />
+					<SkillIcon icon={<SiOpenai title="OpenAI" />} label="OpenAI" />
+					<SkillIcon icon={<SiGithub title="Github" />} label="Github" />
+				</SkillStack>
 			</ResumeSection>
 			<ResumeSection>
 				<h2>Licenses & certifications</h2>

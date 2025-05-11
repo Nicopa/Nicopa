@@ -45,13 +45,17 @@ export default function ResumeBR() {
 			}}
 		>
 			<ResumeSection>
-				<h2>Sobre</h2>
-				<p>Sou um engenheiro de software full-stack remoto com mais de seis anos de experiência na criação de aplicativos web de ponta a ponta. Apaixonado por soluções escaláveis ​e inovadoras, sou especialista em desenvolvimento de backend com <b>Node.js (TypeScript)</b>, particularmente usando o <b>framework NestJS</b>, e tenho experiência com <b>PHP (CodeIgniter)</b> e <b>Python (Django)</b>.</p>
-				<p>No frontend, trabalho com <b>React</b>, <b>Angular</b> e <b>Next.js</b>, proporcionando experiências de usuário dinâmicas e eficientes. Minha experiência em banco de dados inclui <b>MySQL</b>, <b>PostgreSQL</b> e <b>MongoDB</b>.</p>
-				<p>Sinto-me confortável trabalhando de forma assíncrona com equipes globais e tenho experiência com ferramentas de controle de tempo como <b>Toptal</b> e <b>Time Doctor</b> se necessário.</p>
-			</ResumeSection>
-			<ResumeSection>
 				<h2>Experiência</h2>
+				<div className={styles["experience-item"]}>
+					<div className={styles.title}>Full Stack Software Engineer</div>
+					<div className={styles.place}>Turbo Tenant</div>
+					<div className={styles.period}>Abr 2025 - Presente</div>
+					<p className={styles.description}>
+						A TurboTenant é uma empresa de tecnologia pioneira no segmento de proptech, reconhecida por sua plataforma digital inovadora que simplifica o processo de locação para proprietários e inquilinos.
+						A empresa utiliza um conjunto abrangente de ferramentas projetadas para otimizar o marketing, a gestão e a seleção de inquilinos, possibilitando uma abordagem moderna, eficiente e centrada no cliente para a gestão de imóveis.
+						Reconhecida por sua cultura inovadora e compromisso com a melhoria contínua, a TurboTenant continua a transformar o cenário das experiências de locação no dinâmico mercado imobiliário atual.
+					</p>
+				</div>
 				<div className={styles["experience-item"]}>
 					<div className={styles.title}>Full Stack Software Engineer</div>
 					<div className={styles.place}>ElectroNeek</div>
@@ -110,35 +114,10 @@ export default function ResumeBR() {
 				</div>
 			</ResumeSection>
 			<ResumeSection>
-				<h2>Habilidades</h2>
-				<p>
-					Estas são algumas das tecnologias que eu consegui, ao menos,
-					desenvolver uma aplicação.
-				</p>
-				<SkillStack>
-					<SkillIcon
-						icon={<SiTypescript title="Typescript" />}
-						label="Typescript"
-					></SkillIcon>
-					<SkillIcon icon={<SiNestjs title="Nest.js" />} label="Nest.js" />
-					<SkillIcon icon={<SiNodedotjs title="Node.js" />} label="Node.js" />
-					<SkillIcon icon={<SiNextdotjs title="Next.js" />} label="Next.js" />
-					<SkillIcon icon={<SiReact title="React" />} label="React" />
-					<SkillIcon icon={<SiAngular title="Angular" />} label="Angular" />
-					<SkillIcon icon={<SiDocker title="Docker" />} label="Docker" />
-					<SkillIcon icon={<SiPython title="Python" />} label="Python" />
-					<SkillIcon icon={<SiPhp title="PHP" />} label="PHP" />
-					<SkillIcon
-						icon={<SiCodeigniter title="Codeigniter" />}
-						label="Codeigniter"
-					/>
-					<SkillIcon icon={<SiPostgresql title="Postgres" />} label="Postgres" />
-					<SkillIcon icon={<SiMysql title="MySQL" />} label="MySQL" />
-					<SkillIcon icon={<SiMongodb title="MongoDB" />} label="MongoDB" />
-					<SkillIcon icon={<SiSass title="SCSS/Sass" />} label="SCSS/Sass" />
-					<SkillIcon icon={<SiOpenai title="OpenAI" />} label="OpenAI" />
-					{/* <SkillIcon icon={<SiGithub title="Github" />} label="Github" /> */}
-				</SkillStack>
+				<h2>Sobre</h2>
+				<p>Sou um engenheiro de software full-stack remoto com mais de seis anos de experiência na criação de aplicativos web de ponta a ponta. Apaixonado por soluções escaláveis ​e inovadoras, sou especialista em desenvolvimento de backend com <b>Node.js (TypeScript)</b>, particularmente usando o <b>framework NestJS</b>, e tenho experiência com <b>PHP (CodeIgniter)</b> e <b>Python (Django)</b>.</p>
+				<p>No frontend, trabalho com <b>React</b>, <b>Angular</b> e <b>Next.js</b>, proporcionando experiências de usuário dinâmicas e eficientes. Minha experiência em banco de dados inclui <b>MySQL</b>, <b>PostgreSQL</b> e <b>MongoDB</b>.</p>
+				<p>Sinto-me confortável trabalhando de forma assíncrona com equipes globais e tenho experiência com ferramentas de controle de tempo como <b>Toptal</b> e <b>Time Doctor</b> se necessário.</p>
 			</ResumeSection>
 			<ResumeSection className={styles.projects}>
 				<h2>Projetos pessoais</h2>
@@ -259,6 +238,37 @@ export default function ResumeBR() {
 						<div className={styles.techs}>Typescript, Angular</div>
 					</div>
 				</div>
+			</ResumeSection>
+			<ResumeSection>
+				<h2>Habilidades</h2>
+				<p>
+					Estas são algumas das tecnologias que eu consegui, ao menos,
+					desenvolver uma aplicação.
+				</p>
+				<SkillStack>
+					<SkillIcon
+						icon={<SiTypescript title="Typescript" />}
+						label="Typescript"
+					></SkillIcon>
+					<SkillIcon icon={<SiNestjs title="Nest.js" />} label="Nest.js" />
+					<SkillIcon icon={<SiNodedotjs title="Node.js" />} label="Node.js" />
+					<SkillIcon icon={<SiNextdotjs title="Next.js" />} label="Next.js" />
+					<SkillIcon icon={<SiReact title="React" />} label="React" />
+					<SkillIcon icon={<SiAngular title="Angular" />} label="Angular" />
+					<SkillIcon icon={<SiDocker title="Docker" />} label="Docker" />
+					<SkillIcon icon={<SiPython title="Python" />} label="Python" />
+					<SkillIcon icon={<SiPhp title="PHP" />} label="PHP" />
+					<SkillIcon
+						icon={<SiCodeigniter title="Codeigniter" />}
+						label="Codeigniter"
+					/>
+					<SkillIcon icon={<SiPostgresql title="Postgres" />} label="Postgres" />
+					<SkillIcon icon={<SiMysql title="MySQL" />} label="MySQL" />
+					<SkillIcon icon={<SiMongodb title="MongoDB" />} label="MongoDB" />
+					<SkillIcon icon={<SiSass title="SCSS/Sass" />} label="SCSS/Sass" />
+					<SkillIcon icon={<SiOpenai title="OpenAI" />} label="OpenAI" />
+					{/* <SkillIcon icon={<SiGithub title="Github" />} label="Github" /> */}
+				</SkillStack>
 			</ResumeSection>
 			<ResumeSection>
 				<h2>Licenças e Certificações</h2>
